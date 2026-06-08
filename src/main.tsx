@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./index.css";
 import Landing from "./pages/Landing";
 import PetTracker from "./pages/PetTracker";
-import Tripwire from "./pages/Tripwire";
+import Nightward from "./pages/Nightward";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 
@@ -14,7 +14,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/pet" element={<PetTracker />} />
-        <Route path="/tripwire" element={<Tripwire />} />
+        <Route path="/nightward" element={<Nightward />} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/terms" element={<Terms />} />
       </Routes>

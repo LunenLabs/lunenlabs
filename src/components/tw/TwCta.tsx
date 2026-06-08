@@ -2,7 +2,7 @@ import TwInterestForm from "./TwInterestForm";
 
 /**
  * CTA 섹션.
- * ⚠️ tripwire 레포는 비공개(법무 검토 전 보류). 라이브 GitHub 링크 절대 없음.
+ * ⚠️ nightward 레포는 비공개(법무 검토 전 보류). 라이브 GitHub 링크 절대 없음.
  * "곧 오픈소스 공개 예정" + 관심 등록(TwInterestForm)만.
  */
 export default function TwCta() {
@@ -31,7 +31,7 @@ export default function TwCta() {
             공개할 예정입니다.
           </h2>
           <p className="text-white/60 text-lg leading-relaxed">
-            tripwire는 아직 공개 준비 중이에요. 공개되는 순간 가장 먼저 알려드릴게요.
+            nightward는 아직 공개 준비 중이에요. 공개되는 순간 가장 먼저 알려드릴게요.
           </p>
         </div>
 

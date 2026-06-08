@@ -1,5 +1,5 @@
 /**
- * 정직 섹션 — "tripwire가 하는 것 / 안 하는 것".
+ * 정직 섹션 — "nightward가 하는 것 / 안 하는 것".
  * 신뢰 형성용. "버그를 찾아준다" 식 오버클레임 절대 금지.
  * 판단은 사람 몫이라는 점을 분명히 한다.
  */
@@ -25,12 +25,12 @@ export default function TwHonest() {
             HONEST SCOPE
           </div>
           <h2 className="text-white text-4xl sm:text-5xl font-bold mb-6 leading-tight">
-            tripwire가 하는 것,
+            nightward가 하는 것,
             <br />
             <span className="text-white/50">그리고 하지 않는 것.</span>
           </h2>
           <p className="text-white/65 text-lg leading-relaxed">
-            tripwire는 변화를 빠짐없이 <strong className="text-white">보여줄</strong> 뿐,
+            nightward는 변화를 빠짐없이 <strong className="text-white">보여줄</strong> 뿐,
             그게 버그인지 판단하지는 않습니다. 무엇이 옳은 동작인지 결정하는 건
             언제나 사람의 몫입니다.
           </p>
@@ -69,7 +69,7 @@ export default function TwHonest() {
         </div>
 
         <p className="mt-8 text-white/45 text-sm leading-relaxed max-w-2xl">
-          tripwire는 "버그를 찾아주는 도구"가 아닙니다. 무엇이 달라졌는지를
+          nightward는 "버그를 찾아주는 도구"가 아닙니다. 무엇이 달라졌는지를
           정확히 보여주어, 사람이 더 빨리·더 안심하고 판단하도록 돕는 도구입니다.
         </p>
       </div>

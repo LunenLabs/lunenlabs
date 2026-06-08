@@ -1,7 +1,7 @@
 /**
  * 실제 사례 섹션 — 가장 중요. 진짜 수치 그대로.
  * 펫샵 체크아웃에서 세율 한 줄(0.10 → 0.095)만 바꿨더니 3개 고객 동작이 연쇄 변경.
- * 유닛 테스트는 "3 passed"로 통과했지만 tripwire가 잡았다 — 이 대비가 핵심.
+ * 유닛 테스트는 "3 passed"로 통과했지만 nightward가 잡았다 — 이 대비가 핵심.
  */
 
 const rows = [
@@ -52,7 +52,7 @@ export default function TwRealCase() {
           </p>
         </div>
 
-        {/* 핵심 대비: 유닛 테스트는 통과, tripwire는 잡음 */}
+        {/* 핵심 대비: 유닛 테스트는 통과, nightward는 잡음 */}
         <div className="grid sm:grid-cols-2 gap-4 mb-10">
           <div className="p-5 rounded-2xl bg-white/[0.03] border border-success/25">
             <div className="flex items-center gap-2 mb-2">
@@ -71,10 +71,10 @@ export default function TwRealCase() {
               <span className="text-aqua font-mono text-sm font-semibold">
                 ⚠ 3 behaviors changed
               </span>
-              <span className="text-white/40 text-xs">tripwire</span>
+              <span className="text-white/40 text-xs">nightward</span>
             </div>
             <p className="text-white/70 text-sm leading-relaxed">
-              tripwire는 승인된 기준선과 달라진 동작 3개를 즉시 잡아냈습니다.
+              nightward는 승인된 기준선과 달라진 동작 3개를 즉시 잡아냈습니다.
               테스트가 못 본 변화입니다.
             </p>
           </div>
@@ -111,19 +111,19 @@ export default function TwRealCase() {
           <strong className="text-white">
             고객이 실버 등급과 무료배송을 동시에 잃었습니다.
           </strong>{" "}
-          사람 눈엔 안 보이지만, tripwire엔 보입니다.
+          사람 눈엔 안 보이지만, nightward엔 보입니다.
         </p>
 
-        {/* 데모 GIF — public/tripwire-demo.gif (없어도 빌드 안 깨짐) */}
+        {/* 데모 GIF — public/nightward-demo.gif (없어도 빌드 안 깨짐) */}
         <figure className="rounded-2xl overflow-hidden border border-white/10 bg-black/30 shadow-2xl shadow-aqua/5 max-w-3xl mx-auto">
           <img
-            src="/tripwire-demo.gif"
+            src="/nightward-demo.gif"
             loading="lazy"
-            alt="tripwire가 펫샵 체크아웃에서 세율 한 줄 변경으로 발생한 3개 고객 동작 변화(결제 합계·멤버십 등급·배송비)를 잡아내는 데모"
+            alt="nightward가 펫샵 체크아웃에서 세율 한 줄 변경으로 발생한 3개 고객 동작 변화(결제 합계·멤버십 등급·배송비)를 잡아내는 데모"
             className="w-full h-auto block"
           />
           <figcaption className="px-5 py-3 text-white/45 text-xs text-center border-t border-white/10 font-mono">
-            tripwire가 동작 변화를 잡아내는 순간 (demo)
+            nightward가 동작 변화를 잡아내는 순간 (demo)
           </figcaption>
         </figure>
       </div>

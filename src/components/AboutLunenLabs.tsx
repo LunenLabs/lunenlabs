@@ -64,7 +64,7 @@ export default function AboutLunenLabs() {
             },
             {
               k: "개발 도구 · OSS",
-              v: "tripwire",
+              v: "nightward",
               note: "AI 변경의 회귀 방화벽",
             },
             {

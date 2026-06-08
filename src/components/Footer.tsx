@@ -25,8 +25,8 @@ export default function Footer() {
               <li>CareConnect (개발 중)</li>
               <li>SDET Code (점진 축소)</li>
               <li>
-                <Link to="/tripwire" className="hover:text-aqua transition-colors">
-                  tripwire (Dev tooling · 개발 중)
+                <Link to="/nightward" className="hover:text-aqua transition-colors">
+                  nightward (Dev tooling · 개발 중)
                 </Link>
               </li>
             </ul>
