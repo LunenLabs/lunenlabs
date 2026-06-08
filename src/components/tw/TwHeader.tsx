@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 /**
- * tripwire 페이지 전용 Header.
- * PT Header를 미러링하되, tripwire 고유 톤(다크 ink 배경 / 모노 악센트)으로.
+ * nightward 페이지 전용 Header.
+ * PT Header를 미러링하되, nightward 고유 톤(다크 ink 배경 / 모노 악센트)으로.
  * 좌측에 모회사 LunenLabs 로고(홈 복귀) 유지.
  */
 export default function TwHeader() {
@@ -45,7 +45,7 @@ export default function TwHeader() {
           <span className="hidden sm:block w-px h-5 bg-white/15" />
           <div className="flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-aqua" aria-hidden />
-            <span className="font-bold text-white tracking-tight font-mono">tripwire</span>
+            <span className="font-bold text-white tracking-tight font-mono">nightward</span>
           </div>
         </div>
 

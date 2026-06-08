@@ -2,9 +2,9 @@ import { useState, type FormEvent } from "react";
 import { Link } from "react-router-dom";
 
 /**
- * tripwire 관심 등록 폼.
+ * nightward 관심 등록 폼.
  * SignupForm 패턴 재사용 (POST /api/signup → 실패 시 mailto fallback).
- * source="lunenlabs.com/tripwire", product="tripwire" 로 구분.
+ * source="lunenlabs.com/nightward", product="nightward" 로 구분.
  * ⚠️ 레포는 비공개(법무 검토 전) — 라이브 GitHub 링크 없음. "곧 오픈소스 공개 예정"만 노출.
  */
 
@@ -40,7 +40,7 @@ export default function TwInterestForm() {
   const buildMailto = () => {
     // 개인정보보호법 §29: PII를 URL에 포함하지 않음
     const subject = encodeURIComponent(
-      "[tripwire 관심 등록 fallback] /tripwire 양식 내용 첨부 요망"
+      "[nightward 관심 등록 fallback] /nightward 양식 내용 첨부 요망"
     );
     return `mailto:${FALLBACK_EMAIL}?subject=${subject}`;
   };
@@ -66,8 +66,8 @@ export default function TwInterestForm() {
           stack: form.stack,
           intent: form.intent,
           consent_marketing: form.consentMarketing,
-          product: "tripwire",
-          source: "lunenlabs.com/tripwire",
+          product: "nightward",
+          source: "lunenlabs.com/nightward",
         }),
       });
       if (!res.ok) {
@@ -103,7 +103,7 @@ export default function TwInterestForm() {
         </div>
         <h3 className="text-white text-2xl font-bold mb-3">등록됐어요 🎉</h3>
         <p className="text-white/70 mb-6 leading-relaxed">
-          {form.name}님, 감사해요. tripwire가 오픈소스로 공개되면
+          {form.name}님, 감사해요. nightward가 오픈소스로 공개되면
           <br />
           가장 먼저 알려드릴게요.
         </p>
@@ -129,7 +129,7 @@ export default function TwInterestForm() {
         오픈소스 공개 알림 받기
       </h3>
       <p className="text-white/55 text-sm mb-7">
-        tripwire는 곧 오픈소스로 공개될 예정이에요. 공개 시점에 가장 먼저 안내드릴게요.
+        nightward는 곧 오픈소스로 공개될 예정이에요. 공개 시점에 가장 먼저 안내드릴게요.
       </p>
 
       <div className="grid sm:grid-cols-2 gap-4 mb-4">

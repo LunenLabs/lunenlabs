@@ -52,21 +52,21 @@ const products: {
   {
     name: "SDET Code",
     tag: "B2B 테스트 자동화 (점진 축소)",
-    desc: "글로벌 클라이언트를 위한 SaaS 테스트 자동화 컨설팅으로 B2C 라인업의 R&D를 뒷받침해 왔습니다. 신규 수임은 점차 줄이고, 여기서 쌓인 회귀 검증 노하우를 후속 도구 tripwire로 옮기는 중입니다.",
+    desc: "글로벌 클라이언트를 위한 SaaS 테스트 자동화 컨설팅으로 B2C 라인업의 R&D를 뒷받침해 왔습니다. 신규 수임은 점차 줄이고, 여기서 쌓인 회귀 검증 노하우를 후속 도구 nightward로 옮기는 중입니다.",
     status: "점진 축소",
     bullets: [
       "기존 클라이언트 유지보수 중심으로 전환",
-      "축적한 회귀 검증 노하우 → tripwire로 이전",
+      "축적한 회귀 검증 노하우 → nightward로 이전",
       "신규 컨설팅 수임은 점진적으로 축소",
     ],
   },
   {
-    name: "tripwire",
+    name: "nightward",
     tag: "AI 변경의 회귀 방화벽",
     desc: "AI가 코드를 고칠 때 조용히 함께 움직이는 동작들(blast radius)을 즉시 보여주고, 승인한 경계를 넘는 변경을 막아 끝없는 수정 루프에 '멈춰도 되는 지점'을 줍니다.",
     status: "개발 중",
-    href: "/tripwire",
-    ctaLabel: "tripwire 자세히 보기 →",
+    href: "/nightward",
+    ctaLabel: "nightward 자세히 보기 →",
     devTool: true,
     bullets: [
       "AI가 건드린 진짜 범위를 즉시 가시화",
@@ -99,7 +99,7 @@ export default function ProductLineup() {
           <p className="text-mist text-lg leading-relaxed">
             네 개의 B2C 제품은 인증 · 결제 · 위치 · 알림 인프라를 공유합니다. 한 제품의
             검증이 다음 제품의 출시 비용을 줄이죠. 그리고 이 제품들을 안정적으로
-            만들기 위해 태어난 개발 도구 <strong className="text-navy">tripwire</strong>가
+            만들기 위해 태어난 개발 도구 <strong className="text-navy">nightward</strong>가
             그 아래를 받칩니다.
           </p>
         </div>

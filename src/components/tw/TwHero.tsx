@@ -24,7 +24,7 @@ export default function TwHero() {
         <div className="max-w-3xl">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-md border border-aqua/30 bg-aqua/10 text-aqua text-xs font-semibold mb-7 font-mono tracking-wide">
             <span className="w-1.5 h-1.5 rounded-full bg-aqua animate-pulse" />
-            tripwire · 개발 중 · 곧 오픈소스 공개 예정
+            nightward · 개발 중 · 곧 오픈소스 공개 예정
           </div>
 
           <h1 className="text-white text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.12] mb-6">
@@ -36,7 +36,7 @@ export default function TwHero() {
           </h1>
 
           <p className="text-white/75 text-lg sm:text-xl leading-relaxed mb-3 max-w-2xl">
-            tripwire는 그 조용한 변화를{" "}
+            nightward는 그 조용한 변화를{" "}
             <strong className="text-white">즉시 보여주고, 승인한 경계에서 멈춥니다.</strong>
           </p>
           <p className="text-white/55 text-base sm:text-lg leading-relaxed mb-10 max-w-2xl">
