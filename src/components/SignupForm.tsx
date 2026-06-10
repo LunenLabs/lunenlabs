@@ -25,7 +25,7 @@ const initialState: FormState = {
   consentMarketing: false,
 };
 
-const SIGNUP_ENDPOINT = "/api/v1/prelaunch/signup";
+const SIGNUP_ENDPOINT = "/api/signup";
 const FALLBACK_EMAIL = "jhryu115@gmail.com";
 
 export default function SignupForm() {
