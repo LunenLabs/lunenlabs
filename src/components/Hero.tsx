@@ -42,7 +42,7 @@ export default function Hero() {
 
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-x-6 gap-y-5 max-w-3xl">
           {[
-            { value: "3", label: "안심 앱 라인업" },
+            { value: "2 트랙", label: "안심 앱 3 · 품질 도구 2" },
             { value: "18,500+", label: "프로덕션급 코드 (LOC)" },
             { value: "AI 5축", label: "PetTracker 차별화 영역" },
             { value: "법규 내장", label: "PIPA · 위치정보법 준수" },
