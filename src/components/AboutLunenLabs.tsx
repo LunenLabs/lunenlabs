@@ -54,7 +54,7 @@ export default function AboutLunenLabs() {
           {[
             {
               k: "B2C 안심 앱",
-              v: "PetTracker · SafeWay · CareConnect",
+              v: "PetTracker · SafeWay Kids · CareConnect",
               note: "한국 안심 일상 플랫폼",
             },
             {

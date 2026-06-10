@@ -93,14 +93,15 @@ export default function ProductLineup() {
             Products
           </div>
           <h2 className="text-4xl sm:text-5xl font-bold text-navy mb-6 leading-tight">
-            안전 라인업 4종, <br className="hidden sm:block" />
+            안심 앱 3종, <br className="hidden sm:block" />
             그리고 그걸 떠받치는 개발 도구.
           </h2>
           <p className="text-mist text-lg leading-relaxed">
-            네 개의 B2C 제품은 인증 · 결제 · 위치 · 알림 인프라를 공유합니다. 한 제품의
-            검증이 다음 제품의 출시 비용을 줄이죠. 그리고 이 제품들을 안정적으로
-            만들기 위해 태어난 개발 도구 <strong className="text-navy">nightward</strong>가
-            그 아래를 받칩니다.
+            세 개의 안심 앱(PetTracker · SafeWay Kids · CareConnect)은 인증 · 결제 ·
+            위치 · 알림 인프라를 공유합니다. 한 제품의 검증이 다음 제품의 출시 비용을
+            줄이죠. B2B 컨설팅 SDET Code는 신규 수임을 줄여가며 그 노하우를 옮기는
+            중이고, 이 제품들을 안정적으로 만들기 위해 태어난 개발 도구{" "}
+            <strong className="text-navy">nightward</strong>가 그 아래를 받칩니다.
           </p>
         </div>
 
