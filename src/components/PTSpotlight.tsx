@@ -39,14 +39,14 @@ export default function PTSpotlight() {
             PetTracker는
             <br />
             <span className="bg-gradient-to-r from-aqua to-aqua-light bg-clip-text text-transparent">
-              산책 위탁의 신뢰 문제
+              반려동물의 일상 전반
             </span>
-            를 풉니다.
+            을 함께 돌봅니다.
           </h2>
           <p className="text-white/75 text-lg leading-relaxed">
-            보호자가 모르는 사람에게 강아지를 맡기는 일은 쉽지 않습니다. PetTracker는
-            신원조회 · 보험 · 실시간 GPS · 사고 자동 신고 · AI 기반 모니터링을 통합해
-            "맡길 수 있는 사람"의 기준을 다시 정의합니다.
+            산책 매칭 · 사고 자동 대응 · 컨디션 추적 · 추억 기록까지 하나의 앱에서
+            챙기는 종합 케어 동반자입니다. 신원조회 · 보험 · 실시간 GPS · AI 기반
+            모니터링으로 "맡길 수 있는 사람"의 기준도 다시 정의합니다.
           </p>
         </div>
 

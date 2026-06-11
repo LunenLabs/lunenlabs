@@ -53,19 +53,19 @@ export default function AboutLunenLabs() {
         <div className="mt-16 grid sm:grid-cols-2 gap-6">
           {[
             {
-              k: "B2C 안심 앱",
-              v: "PetTracker · SafeWay · CareConnect",
-              note: "한국 안심 일상 플랫폼",
+              k: "Track 01 · 안심 앱",
+              v: "PetTracker · SafeWay Kids · CareConnect",
+              note: "일상의 안전을 지키는 B2C 라인업",
             },
             {
-              k: "B2B 사업",
-              v: "SDET Code",
-              note: "글로벌 SaaS 테스트 자동화 (점진 축소)",
+              k: "Track 02 · 품질 엔지니어링",
+              v: "SDET Code · nightward",
+              note: "소프트웨어 품질을 지키는 B2B · 개발 도구",
             },
             {
-              k: "개발 도구 · OSS",
-              v: "nightward",
-              note: "AI 변경의 회귀 방화벽",
+              k: "공유 인프라",
+              v: "인증 · 결제 · 위치 · 알림",
+              note: "안심 앱 3종이 공유하는 코어",
             },
             {
               k: "법인 상태",

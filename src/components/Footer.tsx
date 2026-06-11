@@ -19,14 +19,22 @@ export default function Footer() {
 
           <div>
             <h4 className="text-white font-semibold mb-4 text-sm">제품</h4>
-            <ul className="space-y-2 text-sm">
+            <div className="text-white/40 text-[11px] uppercase tracking-wider mb-2">
+              안심 앱
+            </div>
+            <ul className="space-y-2 text-sm mb-4">
               <li>PetTracker (출시 예정)</li>
               <li>SafeWay Kids (샌드박스)</li>
               <li>CareConnect (개발 중)</li>
+            </ul>
+            <div className="text-white/40 text-[11px] uppercase tracking-wider mb-2">
+              품질 엔지니어링
+            </div>
+            <ul className="space-y-2 text-sm">
               <li>SDET Code (점진 축소)</li>
               <li>
                 <Link to="/nightward" className="hover:text-aqua transition-colors">
-                  nightward (Dev tooling · 개발 중)
+                  nightward (개발 중)
                 </Link>
               </li>
             </ul>
