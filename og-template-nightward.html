@@ -1,0 +1,81 @@
+<!doctype html>
+<!--
+  nightward OG image (1280x720). Not a Vite input — never shipped.
+  Regenerate:
+    "C:/Program Files/Google/Chrome/Application/chrome.exe" --headless=new --disable-gpu \
+      --hide-scrollbars --window-size=1280,720 --virtual-time-budget=3000 \
+      --screenshot="C:/jhryu/01_project/lunenlabs/public/og-image-nightward.png" \
+      "file:///C:/jhryu/01_project/lunenlabs/og-template-nightward.html"
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>OG Template — nightward</title>
+    <link
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css"
+      rel="stylesheet"
+    />
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body {
+        width: 1280px; height: 720px; overflow: hidden;
+        font-family: "Pretendard Variable", Pretendard, system-ui, sans-serif;
+        -webkit-font-smoothing: antialiased; letter-spacing: -0.012em;
+      }
+      .og {
+        position: relative; width: 1280px; height: 720px; padding: 80px; color: #fff;
+        display: flex; flex-direction: column; justify-content: space-between;
+        background:
+          radial-gradient(55% 50% at 80% 15%, rgba(0, 201, 176, 0.2) 0%, transparent 60%),
+          radial-gradient(50% 55% at 12% 85%, rgba(10, 26, 63, 0.9) 0%, transparent 70%),
+          linear-gradient(180deg, #0f1626 0%, #0a1a3f 100%);
+      }
+      .grid {
+        position: absolute; inset: 0; opacity: 0.6;
+        background-image: linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+        background-size: 48px 48px;
+      }
+      .top, .body, .bottom { position: relative; }
+      .top { display: flex; align-items: center; gap: 14px; }
+      .dot { width: 14px; height: 14px; border-radius: 50%; background: #00c9b0; }
+      .brand { font: 700 34px ui-monospace, Consolas, monospace; }
+      .by { color: rgba(255,255,255,0.5); font-size: 22px; }
+      .badge {
+        margin-left: auto; padding: 10px 20px; border-radius: 999px; font-size: 18px;
+        border: 1px solid rgba(0,201,176,0.4); background: rgba(0,201,176,0.1); color: #00c9b0;
+      }
+      .headline { font-size: 64px; font-weight: 800; line-height: 1.06; }
+      .accent {
+        background: linear-gradient(90deg, #00c9b0 0%, #e0faf5 100%);
+        -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+      }
+      .sub { margin-top: 26px; font-size: 28px; color: rgba(255,255,255,0.7); }
+      .bottom { display: flex; justify-content: space-between; align-items: flex-end; }
+      .cmd {
+        font: 600 26px ui-monospace, Consolas, monospace; color: #00c9b0;
+        padding: 14px 22px; border-radius: 14px; border: 1px solid rgba(255,255,255,0.15);
+        background: rgba(0,0,0,0.3);
+      }
+      .url { color: rgba(255,255,255,0.55); font-size: 22px; }
+    </style>
+  </head>
+  <body>
+    <div class="og">
+      <div class="grid"></div>
+      <div class="top">
+        <span class="dot"></span><span class="brand">nightward</span>
+        <span class="by">by LunenLabs</span>
+        <span class="badge">Open source · MIT</span>
+      </div>
+      <div class="body">
+        <div class="headline">AI fixes one bug.<br /><span class="accent">nightward shows what else moved.</span></div>
+        <div class="sub">A regression gate for AI-made changes: capture → approve → gate.</div>
+      </div>
+      <div class="bottom">
+        <span class="cmd">$ pip install nightward</span>
+        <span class="url">lunenlabs.com/nightward</span>
+      </div>
+    </div>
+  </body>
+</html>
