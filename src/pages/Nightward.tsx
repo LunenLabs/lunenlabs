@@ -6,7 +6,7 @@ import TwRealCase from "../components/tw/TwRealCase";
 import TwHowItWorks from "../components/tw/TwHowItWorks";
 import TwHonest from "../components/tw/TwHonest";
 import TwCta from "../components/tw/TwCta";
-import Footer from "../components/Footer";
+import TwFooter from "../components/tw/TwFooter";
 
 export default function Nightward() {
   useEffect(() => {
@@ -43,7 +43,7 @@ export default function Nightward() {
         <TwHonest />
         <TwCta />
       </main>
-      <Footer />
+      <TwFooter />
     </>
   );
 }
