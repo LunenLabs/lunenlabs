@@ -34,7 +34,7 @@ export default function Footer() {
               <li>SDET Code (점진 축소)</li>
               <li>
                 <Link to="/nightward" className="hover:text-aqua transition-colors">
-                  nightward (개발 중)
+                  nightward (오픈소스)
                 </Link>
               </li>
             </ul>

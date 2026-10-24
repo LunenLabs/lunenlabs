@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-type ProductStatus = "출시 임박" | "개발 중" | "운영 중" | "샌드박스 심사" | "점진 축소";
+type ProductStatus = "출시 임박" | "개발 중" | "운영 중" | "샌드박스 심사" | "점진 축소" | "오픈소스 공개";
 
 type Product = {
   name: string;
@@ -69,9 +69,9 @@ const qualityProducts: Product[] = [
     name: "nightward",
     tag: "AI 변경의 회귀 방화벽",
     desc: "AI가 코드를 고칠 때 조용히 함께 움직이는 동작들(blast radius)을 즉시 보여주고, 승인한 경계를 넘는 변경을 막아 끝없는 수정 루프에 '멈춰도 되는 지점'을 줍니다.",
-    status: "개발 중",
+    status: "오픈소스 공개",
     href: "/nightward",
-    ctaLabel: "nightward 자세히 보기 →",
+    ctaLabel: "nightward 자세히 보기 (영문) →",
     devTool: true,
     bullets: [
       "AI가 건드린 진짜 범위를 즉시 가시화",
@@ -113,6 +113,7 @@ const statusStyle: Record<ProductStatus, string> = {
   "개발 중": "bg-navy/10 text-navy",
   "운영 중": "bg-success/15 text-success",
   "점진 축소": "bg-mist/15 text-mist",
+  "오픈소스 공개": "bg-aqua/15 text-aqua",
 };
 
 function ProductCard({ p }: { p: Product }) {

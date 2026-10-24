@@ -1,16 +1,13 @@
-import TwInterestForm from "./TwInterestForm";
-
 /**
- * CTA 섹션.
- * ⚠️ nightward 레포는 비공개(법무 검토 전 보류). 라이브 GitHub 링크 절대 없음.
- * "곧 오픈소스 공개 예정" + 관심 등록(TwInterestForm)만.
+ * CTA 섹션 — 공개 레포 + PyPI 설치 안내.
  */
+const GITHUB = "https://github.com/LunenLabs/nightward";
+const PYPI = "https://pypi.org/project/nightward/";
+const QUICKSTART = `${GITHUB}#quickstart-5-minutes`;
+
 export default function TwCta() {
   return (
-    <section
-      id="tw-cta"
-      className="relative py-20 sm:py-28 bg-ink overflow-hidden"
-    >
+    <section id="tw-cta" className="relative py-20 sm:py-28 bg-ink overflow-hidden">
       <div
         className="absolute inset-0 opacity-70 pointer-events-none"
         aria-hidden
@@ -22,24 +19,59 @@ export default function TwCta() {
       <div className="relative z-10 max-w-2xl mx-auto px-5 sm:px-8">
         <div className="text-center mb-10">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-md border border-aqua/30 bg-aqua/10 text-aqua text-xs font-semibold mb-5 font-mono tracking-wide">
-            <span className="w-1.5 h-1.5 rounded-full bg-aqua animate-pulse" />
-            COMING SOON · OPEN SOURCE
+            <span className="w-1.5 h-1.5 rounded-full bg-aqua" />
+            OPEN SOURCE · MIT
           </div>
           <h2 className="text-white text-4xl sm:text-5xl font-bold mb-5 leading-tight">
-            곧 오픈소스로
-            <br />
-            공개할 예정입니다.
+            Try it in five minutes.
           </h2>
           <p className="text-white/60 text-lg leading-relaxed">
-            nightward는 아직 공개 준비 중이에요. 공개되는 순간 가장 먼저 알려드릴게요.
+            nightward is a pytest plugin and CLI for Python 3.10+. Installing it makes the{" "}
+            <code className="px-1.5 py-0.5 rounded bg-white/10 text-aqua font-mono text-base">
+              behavior
+            </code>{" "}
+            fixture available in every test.
           </p>
         </div>
 
-        <TwInterestForm />
+        <pre className="rounded-2xl border border-white/10 bg-black/40 px-5 py-4 mb-8 overflow-x-auto text-sm font-mono leading-relaxed">
+          <code>
+            <span className="text-white/90">pip install nightward</span>
+            {"\n"}
+            <span className="text-white/90">pip install "nightward[mcp]"</span>
+            <span className="text-white/40">{"  # + MCP server for AI agents"}</span>
+          </code>
+        </pre>
 
-        <p className="mt-8 text-center text-white/35 text-xs leading-relaxed">
-          공개 레포 링크는 준비가 끝나는 대로 이 페이지에 안내드릴 예정입니다.
-          그때까지는 위 알림 등록으로 소식을 받아보실 수 있어요.
+        <div className="flex flex-wrap justify-center gap-3">
+          <a
+            href={GITHUB}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-7 py-3.5 rounded-full bg-aqua text-navy-deep font-semibold hover:bg-aqua-dark hover:text-white transition-all shadow-lg shadow-aqua/20"
+          >
+            View on GitHub →
+          </a>
+          <a
+            href={QUICKSTART}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-7 py-3.5 rounded-full bg-white/5 text-white border border-white/15 hover:bg-white/10 transition-all"
+          >
+            5-minute quickstart
+          </a>
+          <a
+            href={PYPI}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-7 py-3.5 rounded-full bg-white/5 text-white border border-white/15 hover:bg-white/10 transition-all"
+          >
+            PyPI
+          </a>
+        </div>
+
+        <p className="mt-8 text-center text-white/40 text-xs leading-relaxed">
+          Free and MIT-licensed. Issues and feedback are welcome on GitHub.
         </p>
       </div>
     </section>
