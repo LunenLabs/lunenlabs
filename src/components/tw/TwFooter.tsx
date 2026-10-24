@@ -1,7 +1,6 @@
-import { Link } from "react-router-dom";
-
 /**
  * nightward 페이지 전용 영어 footer (공용 Footer는 한국어).
+ * 한국어 페이지 링크는 <a>로 전체 로드 — 한국어 <head>(lang/title)를 다시 받기 위해.
  */
 export default function TwFooter() {
   return (
@@ -32,12 +31,12 @@ export default function TwFooter() {
           <a href="mailto:jhryu115@gmail.com" className="hover:text-aqua transition-colors">
             Contact
           </a>
-          <Link to="/privacy" className="hover:text-aqua transition-colors">
+          <a href="/privacy" className="hover:text-aqua transition-colors">
             Privacy (Korean)
-          </Link>
-          <Link to="/" className="hover:text-aqua transition-colors">
+          </a>
+          <a href="/" className="hover:text-aqua transition-colors">
             LunenLabs home (Korean)
-          </Link>
+          </a>
         </nav>
         <div className="w-full text-xs text-white/35">© 2026 LunenLabs.</div>
       </div>

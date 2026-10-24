@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 
 /**
  * nightward 페이지 전용 Header.
@@ -30,8 +29,9 @@ export default function TwHeader() {
     >
       <div className="max-w-6xl mx-auto px-5 sm:px-8 h-16 flex items-center justify-between">
         <div className="flex items-center gap-5">
-          <Link
-            to="/"
+          {/* 한국어 페이지로 나갈 땐 전체 로드 — 한국어 <head>(lang/title)를 다시 받기 위해 */}
+          <a
+            href="/"
             className="flex items-center gap-2 group text-white/60 hover:text-white transition-colors"
           >
             <span
@@ -41,7 +41,7 @@ export default function TwHeader() {
             <span className="text-sm font-medium tracking-tight hidden sm:inline">
               ← LunenLabs
             </span>
-          </Link>
+          </a>
           <span className="hidden sm:block w-px h-5 bg-white/15" />
           <div className="flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-aqua" aria-hidden />
