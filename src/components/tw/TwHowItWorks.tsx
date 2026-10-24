@@ -6,20 +6,20 @@ const steps = [
   {
     no: "01",
     cmd: "capture",
-    title: "동작을 캡처한다",
-    desc: "코드를 바꾸기 전, 지금의 동작(입력 → 출력)을 기준선으로 기록합니다. checkout_total, loyalty_points, shipping_fee 같은 실제 동작들이 스냅샷됩니다.",
+    title: "Capture behavior",
+    desc: "Before you change anything, your tests record what the code does today with a behavior(...) fixture: real outputs like checkout_total, loyalty_points and shipping_fee. You don't write expected values.",
   },
   {
     no: "02",
     cmd: "approve",
-    title: "경계를 승인한다",
-    desc: "AI가 변경을 만든 뒤, 달라진 동작만 모아 보여줍니다. '이건 의도한 변경'이라고 사람이 직접 승인한 것만 기준선으로 굳어집니다.",
+    title: "Approve the boundary",
+    desc: "After a change, nightward lists only the behaviors that moved, grouped by feature. Only what a human approves as intended becomes the new baseline, as a JSON diff that goes through code review.",
   },
   {
     no: "03",
     cmd: "gate",
-    title: "경계를 넘으면 막는다",
-    desc: "이후 변경이 승인한 경계 밖의 동작을 건드리면 게이트가 멈춥니다. 끝없는 수정 루프에 '여기서 멈춰도 된다'는 신호를 줍니다.",
+    title: "Stop at the boundary",
+    desc: "If a later change moves a behavior outside the approved boundary, the gate stays closed. Your agent loop finally gets a clear signal for when it's done.",
   },
 ];
 
@@ -32,11 +32,12 @@ export default function TwHowItWorks() {
             HOW IT WORKS
           </div>
           <h2 className="text-white text-4xl sm:text-5xl font-bold mb-6 leading-tight">
-            세 단계로 충분합니다.
+            Three steps are enough.
           </h2>
           <p className="text-white/65 text-lg leading-relaxed">
-            새로운 테스트를 한 줄도 쓰지 않아도, 지금 동작을 기준선으로 잡고 그것과
-            달라지는 변화를 감시합니다.
+            Without writing a single new assertion, nightward takes today's behavior as the
+            baseline and watches for anything that drifts from it. Your AI agent can run the
+            gate (CLI or MCP); only a human can open it.
           </p>
         </div>
 

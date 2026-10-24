@@ -5,18 +5,18 @@
 const pains = [
   {
     no: "A",
-    title: "A를 고치면 B가 깨진다",
-    desc: "AI에게 버그 하나를 고쳐달라고 하면, 보이지 않는 곳에서 다른 동작이 함께 바뀝니다. 방금 멀쩡하던 기능이 조용히 달라집니다.",
+    title: "Fix A, break B",
+    desc: "Ask an AI to fix one bug, and some other behavior changes where you aren't looking. A feature that worked a minute ago now does something slightly different.",
   },
   {
     no: "B",
-    title: "B를 고치면 C·D가 깨진다",
-    desc: "그걸 다시 고쳐달라고 하면 또 다른 곳이 흔들립니다. 어디까지 영향이 번졌는지 사람 눈으로는 따라잡기 어렵습니다.",
+    title: "Fix B, break C and D",
+    desc: "Ask it to fix that, and something else shifts. After a few rounds, nobody can track how far the change has spread.",
   },
   {
     no: "∞",
-    title: "그렇게 끝나지 않는 루프",
-    desc: "테스트는 초록불, diff는 작아 보이는데 제품 동작은 계속 미묘하게 어긋납니다. '이제 멈춰도 되는 지점'이 어디인지 알 수가 없습니다.",
+    title: "A loop that never ends",
+    desc: "The tests are green and the diff looks small, but the product keeps drifting. Nothing tells you when it's safe to stop.",
   },
 ];
 
@@ -37,13 +37,13 @@ export default function TwProblem() {
             THE PROBLEM
           </div>
           <h2 className="text-white text-4xl sm:text-5xl font-bold mb-6 leading-tight">
-            AI 코딩의 진짜 고통은
+            The real pain of AI coding
             <br />
-            <span className="text-danger">'고친 다음'에 옵니다.</span>
+            <span className="text-danger">comes after the fix.</span>
           </h2>
           <p className="text-white/65 text-lg leading-relaxed">
-            한 줄을 바꿨을 뿐인데, 어떤 동작이 함께 따라 움직였는지 아무도 말해주지
-            않습니다. 그래서 수정은 끝나지 않습니다.
+            You changed one line, and nothing tells you which behaviors moved with it. So
+            the fixing never ends.
           </p>
         </div>
 

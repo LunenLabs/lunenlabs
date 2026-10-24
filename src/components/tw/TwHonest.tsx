@@ -5,15 +5,15 @@
  */
 
 const does = [
-  "승인한 것과 달라진 모든 변화를 빠짐없이 보여준다",
-  "AI 수정 루프에 멈춤 신호(gate)를 준다",
-  "blast radius를 그룹별로 묶어 보여준다",
+  "Shows every change from what you approved, with nothing left out",
+  "Gives the AI fix loop a stop signal (the gate)",
+  "Groups the blast radius by feature",
 ];
 
 const doesNot = [
-  "버그인지 아닌지 판정하지 않는다 (정답 오라클 없음)",
-  "테스트를 자동으로 생성하지 않는다",
-  "무엇이 '옳은' 동작인지 대신 결정하지 않는다",
+  "Decide whether a change is a bug (there is no correctness oracle)",
+  "Generate tests for you",
+  "Decide what the \"right\" behavior is",
 ];
 
 export default function TwHonest() {
@@ -25,14 +25,14 @@ export default function TwHonest() {
             HONEST SCOPE
           </div>
           <h2 className="text-white text-4xl sm:text-5xl font-bold mb-6 leading-tight">
-            nightward가 하는 것,
+            What nightward does,
             <br />
-            <span className="text-white/50">그리고 하지 않는 것.</span>
+            <span className="text-white/50">and what it doesn't.</span>
           </h2>
           <p className="text-white/65 text-lg leading-relaxed">
-            nightward는 변화를 빠짐없이 <strong className="text-white">보여줄</strong> 뿐,
-            그게 버그인지 판단하지는 않습니다. 무엇이 옳은 동작인지 결정하는 건
-            언제나 사람의 몫입니다.
+            nightward only <strong className="text-white">shows</strong> every change; it never
+            judges whether it's a bug. Deciding what the right behavior is always stays with a
+            human.
           </p>
         </div>
 
@@ -40,7 +40,7 @@ export default function TwHonest() {
           {/* 하는 것 */}
           <div className="p-7 rounded-2xl bg-aqua/[0.05] border border-aqua/25">
             <div className="text-aqua font-semibold text-sm mb-5 font-mono tracking-wide">
-              ✅ 하는 것
+              ✅ Does
             </div>
             <ul className="space-y-4">
               {does.map((d) => (
@@ -55,7 +55,7 @@ export default function TwHonest() {
           {/* 안 하는 것 */}
           <div className="p-7 rounded-2xl bg-white/[0.02] border border-white/12">
             <div className="text-white/55 font-semibold text-sm mb-5 font-mono tracking-wide">
-              ❌ 안 하는 것
+              ❌ Doesn't
             </div>
             <ul className="space-y-4">
               {doesNot.map((d) => (
@@ -69,8 +69,8 @@ export default function TwHonest() {
         </div>
 
         <p className="mt-8 text-white/45 text-sm leading-relaxed max-w-2xl">
-          nightward는 "버그를 찾아주는 도구"가 아닙니다. 무엇이 달라졌는지를
-          정확히 보여주어, 사람이 더 빨리·더 안심하고 판단하도록 돕는 도구입니다.
+          nightward is not a bug finder. It shows exactly what changed, so a human can decide
+          faster and with more confidence.
         </p>
       </div>
     </section>

@@ -5,24 +5,9 @@
  */
 
 const rows = [
-  {
-    behavior: "checkout_total",
-    label: "결제 합계",
-    before: "total 30.03",
-    after: "total 29.89",
-  },
-  {
-    behavior: "loyalty_points",
-    label: "멤버십 등급 · 포인트",
-    before: "silver · 3p",
-    after: "bronze · 2p",
-  },
-  {
-    behavior: "shipping_fee",
-    label: "배송비",
-    before: "무료배송",
-    after: "+$3.50",
-  },
+  { behavior: "checkout_total", label: "Checkout total", before: "total 30.03", after: "total 29.89" },
+  { behavior: "loyalty_points", label: "Loyalty tier · points", before: "silver · 3p", after: "bronze · 2p" },
+  { behavior: "shipping_fee", label: "Shipping fee", before: "free shipping", after: "+$3.50" },
 ];
 
 export default function TwRealCase() {
@@ -38,17 +23,17 @@ export default function TwRealCase() {
             REAL CASE
           </div>
           <h2 className="text-white text-4xl sm:text-5xl font-bold mb-6 leading-tight">
-            세율 한 줄을 바꿨더니,
+            One tax-rate line changed.
             <br />
-            <span className="text-aqua">고객 3명의 동작이 함께 움직였습니다.</span>
+            <span className="text-aqua">Three customer behaviors moved with it.</span>
           </h2>
           <p className="text-white/65 text-lg leading-relaxed">
-            펫샵 체크아웃에서 세율을{" "}
+            In a pet shop checkout, the tax rate went from{" "}
             <code className="px-1.5 py-0.5 rounded bg-white/10 text-aqua font-mono text-base">
               0.10 → 0.095
-            </code>{" "}
-            로 0.5%p 조정했을 뿐입니다. 의도한 변경은 합계뿐이었지만,
-            세 가지 고객 동작이 조용히 연쇄적으로 바뀌었습니다.
+            </code>
+            , a 0.5-point tweak. The only intended change was the total, but three
+            customer-facing behaviors quietly changed in a chain.
           </p>
         </div>
 
@@ -59,11 +44,10 @@ export default function TwRealCase() {
               <span className="text-success font-mono text-sm font-semibold">
                 ✓ 3 passed
               </span>
-              <span className="text-white/40 text-xs">유닛 테스트</span>
+              <span className="text-white/40 text-xs">unit tests</span>
             </div>
             <p className="text-white/60 text-sm leading-relaxed">
-              테스트 스위트는 전부 초록불이었습니다. 사람 눈에도, CI에도
-              아무 문제가 없어 보였습니다.
+              The whole suite was green. Nothing looked wrong to a reviewer or to CI.
             </p>
           </div>
           <div className="p-5 rounded-2xl bg-aqua/[0.06] border border-aqua/40">
@@ -74,8 +58,8 @@ export default function TwRealCase() {
               <span className="text-white/40 text-xs">nightward</span>
             </div>
             <p className="text-white/70 text-sm leading-relaxed">
-              nightward는 승인된 기준선과 달라진 동작 3개를 즉시 잡아냈습니다.
-              테스트가 못 본 변화입니다.
+              nightward caught the three behaviors that no longer match the approved
+              baseline: changes the tests never saw.
             </p>
           </div>
         </div>
@@ -83,9 +67,9 @@ export default function TwRealCase() {
         {/* 수치 표 — 값 그대로 */}
         <div className="rounded-2xl border border-white/10 overflow-hidden bg-white/[0.02] mb-8">
           <div className="grid grid-cols-[1.4fr_1fr_1fr] text-xs font-mono uppercase tracking-wider text-white/45 bg-white/[0.03] border-b border-white/10">
-            <div className="px-5 py-3">동작 (behavior)</div>
-            <div className="px-5 py-3">Before · 승인됨</div>
-            <div className="px-5 py-3">After · 변경</div>
+            <div className="px-5 py-3">Behavior</div>
+            <div className="px-5 py-3">Before · approved</div>
+            <div className="px-5 py-3">After · changed</div>
           </div>
           {rows.map((r) => (
             <div
@@ -107,11 +91,11 @@ export default function TwRealCase() {
         </div>
 
         <p className="text-white/80 text-base sm:text-lg leading-relaxed border-l-2 border-aqua pl-5 mb-12">
-          세율 0.5%p 조정 →{" "}
+          A 0.5-point tax change →{" "}
           <strong className="text-white">
-            고객이 실버 등급과 무료배송을 동시에 잃었습니다.
+            the customer lost silver tier and free shipping at once.
           </strong>{" "}
-          사람 눈엔 안 보이지만, nightward엔 보입니다.
+          Invisible to a reviewer, visible to nightward.
         </p>
 
         {/* 데모 GIF — public/nightward-demo.gif (없어도 빌드 안 깨짐) */}
@@ -119,11 +103,11 @@ export default function TwRealCase() {
           <img
             src="/nightward-demo.gif"
             loading="lazy"
-            alt="nightward가 펫샵 체크아웃에서 세율 한 줄 변경으로 발생한 3개 고객 동작 변화(결제 합계·멤버십 등급·배송비)를 잡아내는 데모"
+            alt="Demo: an AI fixes one line, every test passes, nightward shows three customer-facing behaviors moved, the gate stops CI, and opening it takes a human-approved baseline diff"
             className="w-full h-auto block"
           />
           <figcaption className="px-5 py-3 text-white/45 text-xs text-center border-t border-white/10 font-mono">
-            nightward가 동작 변화를 잡아내는 순간 (demo)
+            A real run of the petshop example
           </figcaption>
         </figure>
       </div>
