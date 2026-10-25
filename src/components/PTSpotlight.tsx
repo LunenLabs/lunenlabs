@@ -76,7 +76,7 @@ export default function PTSpotlight() {
               지금 신청하면 첫 3개월 완전 무료
             </h3>
             <p className="text-white/65 text-sm">
-              2026년 6월 V1.0 출시 시 가장 먼저 알려드립니다.
+              V1.0 출시 시 가장 먼저 알려드립니다.
             </p>
           </div>
           <div className="flex flex-wrap items-center gap-3">

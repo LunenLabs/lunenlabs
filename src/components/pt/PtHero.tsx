@@ -30,7 +30,7 @@ export default function PtHero() {
           <div>
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-pt-orange/30 bg-pt-orange-light text-pt-orange-dark text-xs font-semibold mb-7">
               <span className="w-1.5 h-1.5 rounded-full bg-pt-orange animate-pulse" />
-              PetTracker · 2026년 6월 출시 예정
+              PetTracker · V1.0 준비 중
             </div>
 
             <h1 className="font-pt-heading text-pt-ink text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.1] mb-6">

@@ -32,7 +32,7 @@ export default function Landing() {
                 첫 3개월 완전 무료
               </h2>
               <p className="text-mist text-lg leading-relaxed">
-                2026년 6월 V1.0 출시 시 가장 먼저 안내드립니다.
+                V1.0 출시 시 가장 먼저 안내드립니다.
                 <br />
                 약 1분이면 신청이 완료됩니다.
               </p>

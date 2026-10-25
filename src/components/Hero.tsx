@@ -9,7 +9,7 @@ export default function Hero() {
       <div className="relative z-10 max-w-6xl mx-auto px-5 sm:px-8 pt-28 pb-20 w-full">
         <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-aqua/40 bg-aqua/10 text-aqua text-xs font-medium mb-7">
           <span className="w-1.5 h-1.5 rounded-full bg-aqua animate-pulse" />
-          PetTracker V1.0 · 2026년 6월 출시 예정
+          PetTracker V1.0 · 준비 중
         </div>
 
         <h1 className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05] mb-6">

@@ -70,7 +70,7 @@ export default function AboutLunenLabs() {
             {
               k: "법인 상태",
               v: "사업자등록 진행 중",
-              note: "2026년 출시 정렬",
+              note: "첫 제품 출시에 맞춰 진행",
             },
           ].map((item, i) => (
             <div

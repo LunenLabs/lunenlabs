@@ -110,7 +110,7 @@ export default function PtSignupForm() {
           {form.name}님, 감사해요.
         </p>
         <p className="text-pt-ink-soft mb-6 leading-relaxed">
-          2026년 6월 PetTracker V1.0이 출시되면
+          PetTracker V1.0이 출시되면
           <br />
           가장 먼저 알려드릴게요.
         </p>
@@ -269,7 +269,7 @@ export default function PtSignupForm() {
           산책 메이트(펫시터)로 함께하고 싶으세요?
         </p>
         <p className="text-xs text-pt-ink-soft leading-relaxed mb-3">
-          PT는 V1.0 출시(2026.06) 시점에 산책 메이트 1차 모집을 진행해요. 시급은 회당 14,000원~ (산책 60분 기준, 지역·경력별 조정), 정산은 산책 종료 후 7일 내 등록 계좌로 입금되며, 보험 가맹·자기소개 자동 검수·신원조회를 거쳐 활동을 시작해요. 모집 시작 시점에 알림을 받고 싶으시면 본문에 "메이트 지원 의향"을 적어주시거나 운영자 이메일로 연락 주세요.
+          PT는 V1.0 출시 시점에 산책 메이트 1차 모집을 진행해요. 시급은 회당 14,000원~ (산책 60분 기준, 지역·경력별 조정), 정산은 산책 종료 후 7일 내 등록 계좌로 입금되며, 보험 가맹·자기소개 자동 검수·신원조회를 거쳐 활동을 시작해요. 모집 시작 시점에 알림을 받고 싶으시면 본문에 "메이트 지원 의향"을 적어주시거나 운영자 이메일로 연락 주세요.
         </p>
         <a
           href="mailto:jhryu115@gmail.com?subject=PT%20%EC%82%B0%EC%B1%85%20%EB%A9%94%EC%9D%B4%ED%8A%B8%20%EC%A7%80%EC%9B%90%20%EB%AC%B8%EC%9D%98"

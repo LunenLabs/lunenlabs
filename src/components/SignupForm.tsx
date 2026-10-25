@@ -92,7 +92,7 @@ export default function SignupForm() {
         </div>
         <h3 className="text-navy text-2xl font-bold mb-3">신청이 완료되었습니다</h3>
         <p className="text-mist mb-6 leading-relaxed">
-          {form.name}님, 감사합니다. 2026년 6월 PetTracker V1.0 출시 시
+          {form.name}님, 감사합니다. PetTracker V1.0 출시 시
           <br />
           가장 먼저 안내드리겠습니다.
         </p>
