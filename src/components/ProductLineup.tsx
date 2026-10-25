@@ -20,11 +20,11 @@ const safetyApps: Product[] = [
     name: "PetTracker",
     tag: "강아지 일상 종합 케어",
     desc: "반려동물의 산책 매칭 · 사고 자동 대응 · GPS 이상 탐지 · 컨디션 추적 · 추억 기록까지, 일상 전반을 같이 봐드리는 종합 케어 동반자입니다.",
-    status: "출시 임박",
+    status: "개발 중",
     highlight: true,
     href: "/pet",
     bullets: [
-      "2026년 6월 V1.0 출시",
+      "V1.0 준비 중 · 출시일 미정",
       "AI 5축: 사고 신고 LLM · GPS 이상 · 사진 캡션 · 컨디션 · 모더레이션",
       "산책 + 사고 대응 + 컨디션 + 추억 기록 통합",
     ],

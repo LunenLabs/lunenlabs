@@ -19,7 +19,7 @@ export default function PetTracker() {
     if (meta) {
       meta.setAttribute(
         "content",
-        "PetTracker는 반려동물의 산책 · 사고 대응 · 컨디션 변화 · 추억 기록까지 일상 전반을 함께 챙겨드리는 종합 케어 동반자입니다. 2026년 6월 V1.0 출시 예정."
+        "PetTracker는 반려동물의 산책 · 사고 대응 · 컨디션 변화 · 추억 기록까지 일상 전반을 함께 챙겨드리는 종합 케어 동반자입니다. V1.0 준비 중."
       );
     }
 
@@ -62,7 +62,7 @@ export default function PetTracker() {
                 <span className="text-pt-orange-dark">첫 3개월 완전 무료입니다.</span>
               </h2>
               <p className="text-pt-ink-soft text-lg leading-relaxed">
-                2026년 6월 V1.0이 출시되면 가장 먼저 안내드립니다.
+                V1.0이 출시되면 가장 먼저 안내드립니다.
                 <br />약 1분이면 신청이 끝나요.
               </p>
             </div>
