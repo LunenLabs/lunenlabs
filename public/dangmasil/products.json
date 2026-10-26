@@ -1,0 +1,142 @@
+{
+  "version": 1,
+  "products": [
+    {
+      "id": "led-collar-usb",
+      "name": "USB 충전 LED 목걸이",
+      "reason": "밤길에 멀리서도 보이도록 불이 들어와요",
+      "url": "https://link.coupang.com/a/PLACEHOLDER-led-collar-usb",
+      "tags": [
+        "night"
+      ]
+    },
+    {
+      "id": "water-bottle-portable",
+      "name": "휴대용 강아지 물병",
+      "reason": "걷다가 바로 물을 줄 수 있는 한 손 물병이에요",
+      "url": "https://link.coupang.com/a/PLACEHOLDER-water-bottle-portable",
+      "tags": [
+        "long",
+        "everyday"
+      ]
+    },
+    {
+      "id": "poop-bags-biodegradable",
+      "name": "생분해 배변봉투 40롤",
+      "reason": "산책 때마다 넉넉히 챙기기 좋아요",
+      "url": "https://link.coupang.com/a/PLACEHOLDER-poop-bags-biodegradable",
+      "tags": [
+        "everyday"
+      ]
+    },
+    {
+      "id": "leash-reflective-1p5m",
+      "name": "반사 소재 산책 목줄 1.5m",
+      "reason": "어두운 길에서도 눈에 잘 띄어요",
+      "url": "https://link.coupang.com/a/PLACEHOLDER-leash-reflective-1p5m",
+      "tags": [
+        "night"
+      ]
+    },
+    {
+      "id": "leash-retractable-5m",
+      "name": "자동 줄 감김 목줄 5m",
+      "reason": "넓은 공원에서 줄 길이를 편하게 조절해요",
+      "url": "https://link.coupang.com/a/PLACEHOLDER-leash-retractable-5m",
+      "tags": [
+        "long"
+      ]
+    },
+    {
+      "id": "harness-breathable",
+      "name": "메쉬 소재 가슴줄 하네스",
+      "reason": "통풍이 잘 되는 메쉬라 오래 걸을 때 편해요",
+      "url": "https://link.coupang.com/a/PLACEHOLDER-harness-breathable",
+      "tags": [
+        "long",
+        "everyday"
+      ]
+    },
+    {
+      "id": "harness-reflective",
+      "name": "반사 테이프 하네스",
+      "reason": "저녁 산책에 차량 불빛을 잘 반사해요",
+      "url": "https://link.coupang.com/a/PLACEHOLDER-harness-reflective",
+      "tags": [
+        "night"
+      ]
+    },
+    {
+      "id": "poop-bag-dispenser",
+      "name": "배변봉투 휴대 케이스",
+      "reason": "목줄에 걸어두고 바로 꺼내 쓸 수 있어요",
+      "url": "https://link.coupang.com/a/PLACEHOLDER-poop-bag-dispenser",
+      "tags": [
+        "everyday"
+      ]
+    },
+    {
+      "id": "water-bowl-foldable",
+      "name": "접이식 실리콘 급수 그릇",
+      "reason": "가방에 쏙 들어가서 긴 산책에 챙기기 좋아요",
+      "url": "https://link.coupang.com/a/PLACEHOLDER-water-bowl-foldable",
+      "tags": [
+        "long"
+      ]
+    },
+    {
+      "id": "led-leash-light",
+      "name": "LED 클립 라이트",
+      "reason": "목줄이나 하네스에 달면 밤에 위치가 잘 보여요",
+      "url": "https://link.coupang.com/a/PLACEHOLDER-led-leash-light",
+      "tags": [
+        "night"
+      ]
+    },
+    {
+      "id": "vest-reflective",
+      "name": "반사 안전 조끼",
+      "reason": "어두운 시간대 산책에 눈에 띄는 형광 조끼예요",
+      "url": "https://link.coupang.com/a/PLACEHOLDER-vest-reflective",
+      "tags": [
+        "night"
+      ]
+    },
+    {
+      "id": "paw-cleaner-cup",
+      "name": "발 세정 컵",
+      "reason": "산책 후 현관에서 발을 간편하게 닦아요",
+      "url": "https://link.coupang.com/a/PLACEHOLDER-paw-cleaner-cup",
+      "tags": [
+        "everyday"
+      ]
+    },
+    {
+      "id": "paw-wipes",
+      "name": "강아지 전용 물티슈",
+      "reason": "산책 끝에 발과 몸을 가볍게 닦아줘요",
+      "url": "https://link.coupang.com/a/PLACEHOLDER-paw-wipes",
+      "tags": [
+        "everyday"
+      ]
+    },
+    {
+      "id": "pouch-treat",
+      "name": "간식 파우치 허리 가방",
+      "reason": "훈련 간식을 허리에 차고 편하게 꺼내요",
+      "url": "https://link.coupang.com/a/PLACEHOLDER-pouch-treat",
+      "tags": [
+        "everyday"
+      ]
+    },
+    {
+      "id": "poop-pickup-tool",
+      "name": "휴대용 배변 집게",
+      "reason": "손에 닿지 않고 깔끔하게 치울 수 있어요",
+      "url": "https://link.coupang.com/a/PLACEHOLDER-poop-pickup-tool",
+      "tags": [
+        "everyday"
+      ]
+    }
+  ]
+}
