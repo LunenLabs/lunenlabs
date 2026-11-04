@@ -11,16 +11,16 @@ export default function Privacy() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#FFF5F7]" style={{ fontFamily: "'Pretendard Variable', Pretendard, -apple-system, sans-serif" }}>
+    <div className="min-h-screen bg-[#FFF4EA]" style={{ fontFamily: "'Pretendard Variable', Pretendard, -apple-system, sans-serif" }}>
       <header
         className="text-white"
-        style={{ background: "linear-gradient(170deg, #FF9A8B 0%, #FF6A88 60%, #FF99AC 100%)" }}
+        style={{ background: "radial-gradient(120% 70% at 20% 0%, #FFC27A 0%, #FF9A3D 38%, #F07A1A 70%, #E8650F 100%)" }}
       >
         <div className="max-w-2xl mx-auto px-6 pt-8 pb-10">
           <Link to="/" className="inline-flex items-center gap-2 text-sm font-semibold text-white/90 mb-6">
             <img src="/dangmasil/img/icon.png" alt="" className="w-6 h-6 rounded-md" />← 댕마실
           </Link>
-          <h1 className="text-[28px] font-black leading-tight">댕마실 개인정보처리방침</h1>
+          <h1 className="text-[28px] font-black leading-tight [text-shadow:0_2px_14px_rgba(150,60,0,0.35)]">댕마실 개인정보처리방침</h1>
           <p className="text-white/80 text-sm mt-2">
             시행일자: {EFFECTIVE_DATE} · 운영자: {OPERATOR} (개인 개발자)
           </p>
@@ -28,7 +28,7 @@ export default function Privacy() {
       </header>
 
       <main className="max-w-2xl mx-auto px-4 py-8">
-        <div className="bg-white rounded-3xl p-6 sm:p-9 space-y-8 text-[15px] leading-relaxed text-[#5A4448]">
+        <div className="bg-white/80 backdrop-blur-xl border border-white rounded-3xl p-6 sm:p-9 space-y-8 text-[15px] leading-relaxed text-[#4A3826] shadow-[0_10px_30px_rgba(150,60,0,0.08)]">
           <p>
             '댕마실 - 강아지 산책 기록'(이하 '앱')은 이용자의 개인정보와 위치정보를 수집하거나
             전송하지 않습니다. 이 방침은 앱이 어떤 정보를 어떻게 다루는지 설명합니다.
@@ -41,7 +41,9 @@ export default function Privacy() {
 
           <Section title="2. 기기 안에만 저장되는 정보">
             반려견 정보와 산책 기록(산책 경로 포함)은 이용자의 휴대폰 안에만 저장되며 기기 밖으로
-            보내지 않습니다. 앱을 삭제하면 이 정보도 함께 지워집니다.
+            보내지 않습니다. 산책 중 앱으로 찍은 사진은 이용자의 사진 앱과 이 앱 안에만 저장되며 기기
+            밖으로 보내지 않습니다. 앱을 삭제하면 이 정보도 함께 지워집니다(사진 앱에 저장된 사진은
+            남습니다).
           </Section>
 
           <Section title="3. 상품 목록 받기">
@@ -58,14 +60,14 @@ export default function Privacy() {
 
           <Section title="5. 개인정보 보호책임자">
             개인정보 보호책임자: {OPERATOR} ·{" "}
-            <a href={`mailto:${CONTACT_EMAIL}`} className="text-[#FF4F7B] underline">
+            <a href={`mailto:${CONTACT_EMAIL}`} className="text-[#B4560C] underline">
               {CONTACT_EMAIL}
             </a>
           </Section>
 
           <Section title="6. 문의">
             이 방침에 대한 문의는{" "}
-            <a href={`mailto:${CONTACT_EMAIL}`} className="text-[#FF4F7B] underline">
+            <a href={`mailto:${CONTACT_EMAIL}`} className="text-[#B4560C] underline">
               {CONTACT_EMAIL}
             </a>
             으로 보내 주세요.
@@ -83,7 +85,7 @@ export default function Privacy() {
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <section>
-      <h2 className="text-[#FF4F7B] text-lg font-extrabold mb-2">{title}</h2>
+      <h2 className="text-[#B4560C] text-lg font-extrabold mb-2">{title}</h2>
       <p>{children}</p>
     </section>
   );
