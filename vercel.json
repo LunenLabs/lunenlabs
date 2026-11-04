@@ -9,6 +9,21 @@
       "source": "/dangmasil/privacy",
       "destination": "https://dangmasil.lunenlabs.com/privacy",
       "permanent": true
+    },
+    {
+      "source": "/dangmasil",
+      "destination": "https://dangmasil.lunenlabs.com/",
+      "permanent": true
+    },
+    {
+      "source": "/dangmasil/",
+      "destination": "https://dangmasil.lunenlabs.com/",
+      "permanent": true
+    },
+    {
+      "source": "/dangmasil/index.html",
+      "destination": "https://dangmasil.lunenlabs.com/",
+      "permanent": true
     }
   ],
   "rewrites": [
