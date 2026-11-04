@@ -5,8 +5,27 @@
   "installCommand": "npm install",
   "outputDirectory": "dist",
   "rewrites": [
-    { "source": "/nightward", "destination": "/nightward/index.html" },
-    { "source": "/nightward/", "destination": "/nightward/index.html" },
-    { "source": "/((?!api/).*)", "destination": "/index.html" }
+    {
+      "source": "/:path((?!api/|assets/|dangmasil/).*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "dangmasil.lunenlabs.com"
+        }
+      ],
+      "destination": "/dangmasil/index.html"
+    },
+    {
+      "source": "/nightward",
+      "destination": "/nightward/index.html"
+    },
+    {
+      "source": "/nightward/",
+      "destination": "/nightward/index.html"
+    },
+    {
+      "source": "/((?!api/).*)",
+      "destination": "/index.html"
+    }
   ]
 }
