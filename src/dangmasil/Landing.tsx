@@ -38,7 +38,7 @@ export default function Landing() {
 
         <div className="mt-8 flex justify-center px-6">
           <img
-            src="/dangmasil/img/story-card.png"
+            src="/dangmasil/img/story-card.jpg"
             alt="댕마실 산책 카드 예시: 아이 사진 위에 45분, 보리와 3.2km 마실 완료"
             className="w-[230px] aspect-[9/16] object-cover rounded-[26px] border-4 border-white shadow-[0_18px_40px_rgba(120,0,40,0.35)] bg-[#ffd0da]"
           />
