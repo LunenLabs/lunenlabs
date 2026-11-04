@@ -2,145 +2,43 @@
   "version": 1,
   "products": [
     {
-      "id": "led-collar-usb",
-      "name": "충전식 LED 목걸이",
-      "reason": "밤길에 멀리서도 보이도록 불이 들어와요",
-      "url": "https://link.coupang.com/a/ikjrIUO112",
-      "summaryUrl": "https://link.coupang.com/a/ikjwwCHZ6W",
-      "tags": [
-        "night"
-      ]
-    },
-    {
-      "id": "water-bottle-portable",
-      "name": "휴대용 강아지 물병",
-      "reason": "걷다가 바로 물을 줄 수 있는 한 손 물병이에요",
-      "url": "https://link.coupang.com/a/ikjstS5V8K",
-      "summaryUrl": "https://link.coupang.com/a/ikjwDElyOi",
-      "tags": [
-        "long",
-        "everyday"
-      ]
-    },
-    {
-      "id": "poop-bags-biodegradable",
-      "name": "리필형 배변봉투 42롤",
-      "reason": "산책 때마다 넉넉히 챙기기 좋아요",
-      "url": "https://link.coupang.com/a/ikjsAOT9vE",
-      "summaryUrl": "https://link.coupang.com/a/ikjwKMWUyy",
+      "id": "harness-front-clip",
+      "name": "앞섬방지 하네스",
+      "reason": "목에 부담 없이 가슴으로 잡아 줘서 당기는 아이도 편하게 걸어요",
+      "url": "https://link.coupang.com/a/in1UdXjtnM",
+      "summaryUrl": "https://link.coupang.com/a/in1Vr13uuG",
       "tags": [
         "everyday"
       ]
     },
     {
-      "id": "leash-reflective-1p5m",
-      "name": "빛반사 핸즈프리 리드줄 2.8m",
-      "reason": "허리에 매면 손이 자유롭고 어두운 길에서도 눈에 잘 띄어요",
-      "url": "https://link.coupang.com/a/ikjtgT9G6m",
-      "summaryUrl": "https://link.coupang.com/a/ikjwTtQWaa",
+      "id": "poop-bags-324",
+      "name": "배변봉투 324매",
+      "reason": "산책마다 넉넉하게, 한 번 사면 오래 써요",
+      "url": "https://link.coupang.com/a/in1ZvPEMeW",
+      "summaryUrl": "https://link.coupang.com/a/in10fxEZ08",
       "tags": [
-        "night"
+        "everyday"
       ]
     },
     {
-      "id": "leash-retractable-5m",
-      "name": "자동 줄 감김 목줄 5m",
-      "reason": "넓은 공원에서 줄 길이를 편하게 조절해요",
-      "url": "https://link.coupang.com/a/ikjtoz6igS",
-      "summaryUrl": "https://link.coupang.com/a/ikjw0m6Lmu",
+      "id": "water-bottle-onetouch",
+      "name": "원터치 산책 물통",
+      "reason": "한 손으로 눌러 바로 물을 줄 수 있어요",
+      "url": "https://link.coupang.com/a/in3i8rLa2e",
+      "summaryUrl": "https://link.coupang.com/a/in3j2jTOrA",
       "tags": [
         "long"
       ]
     },
     {
-      "id": "harness-breathable",
-      "name": "쿨메쉬 가슴줄 하네스",
-      "reason": "통풍이 잘 되는 메쉬라 오래 걸을 때 편해요",
-      "url": "https://link.coupang.com/a/ikjtvrn65c",
-      "summaryUrl": "https://link.coupang.com/a/ikjw7eGbiS",
-      "tags": [
-        "long",
-        "everyday"
-      ]
-    },
-    {
-      "id": "harness-reflective",
-      "name": "빛반사 하네스 세트",
-      "reason": "저녁 산책에 차량 불빛을 잘 반사해요",
-      "url": "https://link.coupang.com/a/ikjtD1tLzg",
-      "summaryUrl": "https://link.coupang.com/a/ikjxfMgX3A",
+      "id": "glow-name-tag",
+      "name": "야광 이름표",
+      "reason": "어두운 길에서 빛나서 아이가 잘 보여요",
+      "url": "https://link.coupang.com/a/in3X0J2Jc4",
+      "summaryUrl": "https://link.coupang.com/a/in3WRwhBbo",
       "tags": [
         "night"
-      ]
-    },
-    {
-      "id": "poop-bag-dispenser",
-      "name": "배변봉투 디스펜서 케이스",
-      "reason": "목줄에 걸어두고 바로 꺼내 쓸 수 있어요",
-      "url": "https://link.coupang.com/a/ikjtLqwFkO",
-      "summaryUrl": "https://link.coupang.com/a/ikjxmJ0QTI",
-      "tags": [
-        "everyday"
-      ]
-    },
-    {
-      "id": "water-bowl-foldable",
-      "name": "접이식 급수 그릇 2개",
-      "reason": "가방에 쏙 들어가서 긴 산책에 챙기기 좋아요",
-      "url": "https://link.coupang.com/a/ikjtSs3h4S",
-      "summaryUrl": "https://link.coupang.com/a/ikjxugUyyG",
-      "tags": [
-        "long"
-      ]
-    },
-    {
-      "id": "led-leash-light",
-      "name": "LED 클립 라이트 3개",
-      "reason": "목줄이나 하네스에 달면 밤에 위치가 잘 보여요",
-      "url": "https://link.coupang.com/a/ikjt0UNEm4",
-      "summaryUrl": "https://link.coupang.com/a/ikjxCQhD3s",
-      "tags": [
-        "night"
-      ]
-    },
-    {
-      "id": "paw-cleaner-cup",
-      "name": "발 세척컵",
-      "reason": "산책 후 현관에서 발을 간편하게 닦아요",
-      "url": "https://link.coupang.com/a/ikjt73Q26C",
-      "summaryUrl": "https://link.coupang.com/a/ikjxJs1dgO",
-      "tags": [
-        "everyday"
-      ]
-    },
-    {
-      "id": "paw-wipes",
-      "name": "강아지 전용 물티슈",
-      "reason": "산책 끝에 발과 몸을 가볍게 닦아줘요",
-      "url": "https://link.coupang.com/a/ikjuhTzqvc",
-      "summaryUrl": "https://link.coupang.com/a/ikjxQAG3Fc",
-      "tags": [
-        "everyday"
-      ]
-    },
-    {
-      "id": "pouch-treat",
-      "name": "벨트형 간식 파우치",
-      "reason": "훈련 간식을 허리에 차고 편하게 꺼내요",
-      "url": "https://link.coupang.com/a/ikjuqk6TC0",
-      "summaryUrl": "https://link.coupang.com/a/ikjxZjbKDc",
-      "tags": [
-        "everyday"
-      ]
-    },
-    {
-      "id": "poop-pickup-tool",
-      "name": "휴대용 배변 집게",
-      "reason": "손에 닿지 않고 깔끔하게 치울 수 있어요",
-      "url": "https://link.coupang.com/a/ikjuBMnLIy",
-      "summaryUrl": "https://link.coupang.com/a/ikjx6fiKEC",
-      "tags": [
-        "everyday"
       ]
     }
   ]
