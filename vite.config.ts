@@ -15,6 +15,7 @@ export default defineConfig({
       input: {
         main: "index.html",
         nightward: "nightward/index.html",
+        dangmasil: "dangmasil/index.html",
       },
     },
   },
