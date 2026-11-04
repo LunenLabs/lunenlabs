@@ -4,6 +4,13 @@
   "buildCommand": "npm run build",
   "installCommand": "npm install",
   "outputDirectory": "dist",
+  "redirects": [
+    {
+      "source": "/dangmasil/privacy",
+      "destination": "https://dangmasil.lunenlabs.com/privacy",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/:path((?!api/|assets/|dangmasil/).*)",
