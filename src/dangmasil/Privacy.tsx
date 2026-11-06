@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Footer, { CONTACT_EMAIL, OPERATOR } from "./Footer";
 
 // Update this when the policy text changes.
-const EFFECTIVE_DATE = "2026년 11월 4일";
+const EFFECTIVE_DATE = "2026년 11월 6일";
 
 export default function Privacy() {
   useEffect(() => {
@@ -42,30 +42,47 @@ export default function Privacy() {
           <Section title="2. 기기 안에만 저장되는 정보">
             반려견 정보와 산책 기록(산책 경로 포함)은 이용자의 휴대폰 안에만 저장되며 기기 밖으로
             보내지 않습니다. 산책 중 앱으로 찍은 사진은 이용자의 사진 앱과 이 앱 안에만 저장되며 기기
-            밖으로 보내지 않습니다. 앱을 삭제하면 이 정보도 함께 지워집니다(사진 앱에 저장된 사진은
-            남습니다).
+            밖으로 보내지 않습니다. 산책 카드는 이용자가 공유 버튼을 눌러 직접 보낼 때만 휴대폰 밖으로
+            나갑니다. 앱을 삭제하면 이 정보도 함께 지워집니다(사진 앱에 저장된 사진은 남습니다).
           </Section>
 
-          <Section title="3. 상품 목록 받기">
-            앱은 용품 탭에 보여줄 상품 목록을 lunenlabs.com에서 내려받습니다. 이때 일반적인 웹 요청
-            정보(예: IP 주소)가 호스팅 서버의 로그에 남을 수 있습니다. 이 요청에는 반려견 정보, 산책
-            기록, 위치 정보가 포함되지 않습니다.
+          <Section title="3. 상품 목록과 산책 장소 목록 받기">
+            앱은 용품 탭의 상품 목록과 '산책 장소'의 장소 목록을 lunenlabs.com에서 내려받습니다. 두
+            목록은 아무 값도 붙이지 않고 파일 전체를 받으며, 이 요청에는 반려견 정보, 산책 기록, 위치
+            정보가 포함되지 않습니다. 가까운 순 정렬은 휴대폰 안에서만 계산합니다. 이때 일반적인 웹 요청
+            정보(예: IP 주소)가 호스팅 서버의 로그에 남을 수 있습니다.
           </Section>
 
-          <Section title="4. 제휴 링크">
+          <Section title="4. 장소 사진">
+            장소 정보와 사진은 한국관광공사 자료입니다. 일부 사진(공공누리 제1유형)은 앱에 들어 있고,
+            나머지는 장소를 볼 때 한국관광공사 이미지 서버(tong.visitkorea.or.kr)에서 내려받습니다. 이
+            요청에는 위치 좌표나 반려견 정보가 들어가지 않지만, 일반적인 웹 요청 정보(예: IP 주소)와 어떤
+            사진을 요청했는지가 그 서버에 남을 수 있습니다. 목록이 가까운 순이라 이 정보로 대략적인
+            지역을 짐작할 수 있습니다. 그 서버의 정보 처리에는 한국관광공사의 정책이 적용됩니다.
+          </Section>
+
+          <Section title="5. 건강 앱(Apple 건강)">
+            이용자가 기록 탭이나 설정에서 건강 앱 연결을 켜면, 앱은 Apple 건강 앱의 걸음 수와
+            걷기·달리기 거리를 읽어 기록 탭에 보여 줍니다. 이 정보는 화면에 보여 줄 때 휴대폰 안에서만
+            읽으며, 저장하거나 기기 밖으로 보내지 않고, 광고나 마케팅에 쓰지 않습니다. 앱은 건강 앱에
+            데이터를 쓰지 않습니다. 읽기 권한은 iPhone 설정 › 건강 › 데이터 접근 및 기기에서 언제든 끌 수
+            있습니다.
+          </Section>
+
+          <Section title="6. 제휴 링크">
             앱은 제휴 링크를 보여주며, 링크를 통해 구매가 이루어지면 판매자가 수수료를 받을 수
             있습니다. 링크를 누르면 브라우저나 제휴사 앱(예: 쿠팡)이 열리고, 그 이후의 정보 처리에는
             해당 제휴사의 개인정보 정책이 적용됩니다.
           </Section>
 
-          <Section title="5. 개인정보 보호책임자">
+          <Section title="7. 개인정보 보호책임자">
             개인정보 보호책임자: {OPERATOR} ·{" "}
             <a href={`mailto:${CONTACT_EMAIL}`} className="text-[#B4560C] underline">
               {CONTACT_EMAIL}
             </a>
           </Section>
 
-          <Section title="6. 문의">
+          <Section title="8. 문의">
             이 방침에 대한 문의는{" "}
             <a href={`mailto:${CONTACT_EMAIL}`} className="text-[#B4560C] underline">
               {CONTACT_EMAIL}
@@ -73,7 +90,7 @@ export default function Privacy() {
             으로 보내 주세요.
           </Section>
 
-          <Section title="7. 방침의 변경">이 방침이 바뀌면 이 페이지에 새 시행일자와 함께 게시합니다.</Section>
+          <Section title="9. 방침의 변경">이 방침이 바뀌면 이 페이지에 새 시행일자와 함께 게시합니다.</Section>
         </div>
       </main>
 
