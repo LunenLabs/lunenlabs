@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Footer, { CONTACT_EMAIL, OPERATOR } from "./Footer";
 
 // Update this when the policy text changes.
-const EFFECTIVE_DATE = "2026년 11월 6일";
+const EFFECTIVE_DATE = "2026년 11월 7일";
 
 export default function Privacy() {
   useEffect(() => {
@@ -43,13 +43,14 @@ export default function Privacy() {
             반려견 정보와 산책 기록(산책 경로 포함)은 이용자의 휴대폰 안에만 저장되며 기기 밖으로
             보내지 않습니다. 산책 중 앱으로 찍은 사진은 이용자의 사진 앱과 이 앱 안에만 저장되며 기기
             밖으로 보내지 않습니다. 산책 카드는 이용자가 공유 버튼을 눌러 직접 보낼 때만 휴대폰 밖으로
-            나갑니다. 앱을 삭제하면 이 정보도 함께 지워집니다(사진 앱에 저장된 사진은 남습니다).
+            나갑니다. 뱃지도 휴대폰 안에서만 판정하고 저장합니다. 지역 뱃지에 쓰는 시·도는 앱에 들어 있는
+            행정구역 경계로 계산하며, 위치를 다른 곳에 보내 묻지 않습니다. 앱을 삭제하면 이 정보도 함께
+            지워집니다(사진 앱에 저장된 사진은 남습니다).
           </Section>
 
-          <Section title="3. 상품 목록과 산책 장소 목록 받기">
-            앱은 용품 탭의 상품 목록과 '산책 장소'의 장소 목록을 lunenlabs.com에서 내려받습니다. 두
-            목록은 아무 값도 붙이지 않고 파일 전체를 받으며, 이 요청에는 반려견 정보, 산책 기록, 위치
-            정보가 포함되지 않습니다. 가까운 순 정렬은 휴대폰 안에서만 계산합니다. 이때 일반적인 웹 요청
+          <Section title="3. 산책 장소 목록 받기">
+            앱은 '산책 장소'의 장소 목록을 lunenlabs.com에서 내려받습니다. 목록은 아무 값도 붙이지 않고
+            파일 전체를 받으며, 이 요청에는 반려견 정보, 산책 기록, 위치 정보가 포함되지 않습니다. 가까운 순 정렬은 휴대폰 안에서만 계산합니다. 이때 일반적인 웹 요청
             정보(예: IP 주소)가 호스팅 서버의 로그에 남을 수 있습니다.
           </Section>
 
@@ -69,20 +70,14 @@ export default function Privacy() {
             있습니다.
           </Section>
 
-          <Section title="6. 제휴 링크">
-            앱은 제휴 링크를 보여주며, 링크를 통해 구매가 이루어지면 판매자가 수수료를 받을 수
-            있습니다. 링크를 누르면 브라우저나 제휴사 앱(예: 쿠팡)이 열리고, 그 이후의 정보 처리에는
-            해당 제휴사의 개인정보 정책이 적용됩니다.
-          </Section>
-
-          <Section title="7. 개인정보 보호책임자">
+          <Section title="6. 개인정보 보호책임자">
             개인정보 보호책임자: {OPERATOR} ·{" "}
             <a href={`mailto:${CONTACT_EMAIL}`} className="text-[#B4560C] underline">
               {CONTACT_EMAIL}
             </a>
           </Section>
 
-          <Section title="8. 문의">
+          <Section title="7. 문의">
             이 방침에 대한 문의는{" "}
             <a href={`mailto:${CONTACT_EMAIL}`} className="text-[#B4560C] underline">
               {CONTACT_EMAIL}
@@ -90,7 +85,7 @@ export default function Privacy() {
             으로 보내 주세요.
           </Section>
 
-          <Section title="9. 방침의 변경">이 방침이 바뀌면 이 페이지에 새 시행일자와 함께 게시합니다.</Section>
+          <Section title="8. 방침의 변경">이 방침이 바뀌면 이 페이지에 새 시행일자와 함께 게시합니다.</Section>
         </div>
       </main>
 
