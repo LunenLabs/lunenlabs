@@ -16,6 +16,7 @@ export default defineConfig({
         main: "index.html",
         nightward: "nightward/index.html",
         dangmasil: "dangmasil/index.html",
+        poljjak: "poljjak/index.html",
       },
     },
   },
