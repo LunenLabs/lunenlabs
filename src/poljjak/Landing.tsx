@@ -13,7 +13,7 @@ const FEATURES = [
 
 export default function Landing() {
   useEffect(() => {
-    document.title = "폴짝 - 아이와 바깥놀이·나들이 기록";
+    document.title = "폴짝 - 우리 아이 나들이 일기";
   }, []);
 
   return (

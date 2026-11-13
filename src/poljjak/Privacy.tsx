@@ -31,7 +31,7 @@ export default function Privacy() {
         <div className="bg-white/80 backdrop-blur-xl border border-white rounded-3xl p-6 sm:p-9 space-y-8 text-[15px] leading-relaxed text-[#4A3826] shadow-[0_10px_30px_rgba(170,60,30,0.08)]">
           <p>
             폴짝은 아동 및 보호자의 개인정보와 위치정보를 외부 서버로 수집·전송하지 않습니다. 이 방침은
-            '폴짝 - 아이와 바깥놀이·나들이 기록'(이하 '앱')이 어떤 정보를 어떻게 다루는지 설명합니다.
+            '폴짝 - 우리 아이 나들이 일기'(이하 '앱')이 어떤 정보를 어떻게 다루는지 설명합니다.
           </p>
 
           <Section title="1. 수집하지 않는 정보">
