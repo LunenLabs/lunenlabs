@@ -38,6 +38,16 @@
       "destination": "/dangmasil/index.html"
     },
     {
+      "source": "/:path((?!api/|assets/|poljjak/).*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "poljjak.lunenlabs.com"
+        }
+      ],
+      "destination": "/poljjak/index.html"
+    },
+    {
       "source": "/nightward",
       "destination": "/nightward/index.html"
     },
