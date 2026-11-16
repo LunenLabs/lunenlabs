@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Footer, { CONTACT_EMAIL, OPERATOR } from "./Footer";
 
 // Update this when the policy text changes.
-const EFFECTIVE_DATE = "2026년 11월 13일";
+const EFFECTIVE_DATE = "2026년 11월 16일";
 
 export default function Privacy() {
   useEffect(() => {
@@ -56,10 +56,11 @@ export default function Privacy() {
             지도 링크, 약속 시각이 담깁니다.
           </Section>
 
-          <Section title="4. 아이랑 갈 곳 목록과 상품 목록 받기">
-            앱은 '아이랑 갈 곳'의 장소 목록과 나들이 용품 목록을 lunenlabs.com에서 내려받습니다. 목록은 아무
-            값도 붙이지 않고 파일 전체를 받으며, 이 요청에는 아이 정보, 나들이 기록, 위치 정보가 포함되지
-            않습니다. 가까운 순 정렬은 휴대폰 안에서만 계산합니다. 이때 일반적인 웹 요청 정보(예: IP 주소)가
+          <Section title="4. 장소 목록, 놀이터 목록, 상품 목록 받기">
+            앱은 '아이랑 갈 곳'의 장소 목록, '지도' 탭의 전국 놀이터 목록(행정안전부 전국어린이놀이시설정보),
+            나들이 용품 목록을 lunenlabs.com에서 내려받습니다. 목록은 아무 값도 붙이지 않고 파일 전체를
+            받으며, 이 요청에는 아이 정보, 나들이 기록, 위치 정보가 포함되지 않습니다. 가까운 순 정렬과 내 주변
+            놀이터, 동 이름은 휴대폰 안에서만 계산합니다. 이때 일반적인 웹 요청 정보(예: IP 주소)가
             호스팅 서버의 로그에 남을 수 있습니다. '이달의 추천 키즈 핫플'은 모든 이용자에게 같은 장소가
             보이며, 위치에 따라 고르지 않습니다.
           </Section>
@@ -72,26 +73,36 @@ export default function Privacy() {
             짐작할 수 있습니다. 그 서버의 정보 처리에는 한국관광공사의 정책이 적용됩니다.
           </Section>
 
-          <Section title="6. 건강 앱(Apple 건강)">
+          <Section title="6. 지도">
+            '지도' 탭의 지도는 네이버 지도(네이버클라우드 Maps)로 그립니다. 지도를 보여 주려고 화면에 보이는
+            지역의 지도 그림을 네이버 서버에서 받으며, 이때 일반적인 웹 요청 정보(예: IP 주소), 어느 지역의
+            지도를 요청했는지, 이 앱이 등록된 앱인지 확인하는 정보가 네이버에 전달됩니다. 지도가 내 주변을
+            보여 줄 때는 이 요청으로 대략적인 지역을 짐작할 수 있습니다. 내 위치 표시는 앱이 휴대폰 안의 지도
+            화면에 그리며, 앱은 네이버 지도의 위치 추적 기능을 쓰지 않습니다. 나들이 요약 화면의 경로 지도는
+            Apple 지도로 그리며, 지도 그림을 받을 때 같은 방식으로 Apple 서버에 요청합니다. 각 지도 서버의 정보
+            처리에는 네이버와 Apple의 정책이 적용됩니다.
+          </Section>
+
+          <Section title="7. 건강 앱(Apple 건강)">
             이용자가 기록 탭이나 설정에서 건강 앱 연결을 켜면, 앱은 Apple 건강 앱의 걸음 수와 걷기·달리기
             거리를 읽어 기록 탭에 보여 줍니다. 이 정보는 화면에 보여 줄 때 휴대폰 안에서만 읽으며, 저장하거나
             기기 밖으로 보내지 않고, 광고나 마케팅에 쓰지 않습니다. 앱은 건강 앱에 데이터를 쓰지 않습니다.
             읽기 권한은 iPhone 설정 › 건강 › 데이터 접근 및 기기에서 언제든 끌 수 있습니다.
           </Section>
 
-          <Section title="7. 외부 링크">
+          <Section title="8. 외부 링크">
             지도 앱 길찾기, 근처 찾기, 상품 링크처럼 이용자가 직접 누르는 링크는 해당 앱이나 웹사이트를 엽니다.
             앱은 이때 이용자의 위치를 함께 보내지 않으며, 열린 곳의 정보 처리에는 그곳의 정책이 적용됩니다.
           </Section>
 
-          <Section title="8. 개인정보 보호책임자">
+          <Section title="9. 개인정보 보호책임자">
             개인정보 보호책임자: {OPERATOR} (개인 개발자) ·{" "}
             <a href={`mailto:${CONTACT_EMAIL}`} className="text-[#D2552E] underline">
               {CONTACT_EMAIL}
             </a>
           </Section>
 
-          <Section title="9. 문의">
+          <Section title="10. 문의">
             이 방침에 대한 문의는{" "}
             <a href={`mailto:${CONTACT_EMAIL}`} className="text-[#D2552E] underline">
               {CONTACT_EMAIL}
@@ -99,7 +110,7 @@ export default function Privacy() {
             으로 보내 주세요.
           </Section>
 
-          <Section title="10. 방침의 변경">이 방침이 바뀌면 이 페이지에 새 시행일자와 함께 게시합니다.</Section>
+          <Section title="11. 방침의 변경">이 방침이 바뀌면 이 페이지에 새 시행일자와 함께 게시합니다.</Section>
         </div>
       </main>
 
