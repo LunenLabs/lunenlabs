@@ -11,24 +11,24 @@ export default function Privacy() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#FFF6EC]" style={{ fontFamily: "'Pretendard Variable', Pretendard, -apple-system, sans-serif" }}>
+    <div className="min-h-screen bg-[#FFFBEA]" style={{ fontFamily: "'Pretendard Variable', Pretendard, -apple-system, sans-serif" }}>
       <header
-        className="text-white"
-        style={{ background: "radial-gradient(120% 70% at 20% 0%, #FFD26F 0%, #FF8A5B 55%, #FF6B6B 100%)" }}
+        className="text-[#2A2410]"
+        style={{ background: "linear-gradient(180deg, #FFE45C 0%, #FFF3A6 100%)" }}
       >
         <div className="max-w-2xl mx-auto px-6 pt-8 pb-10">
-          <Link to="/" className="inline-flex items-center gap-2 text-sm font-semibold text-white/90 mb-6">
+          <Link to="/" className="inline-flex items-center gap-2 text-sm font-semibold text-[#2A2410]/80 mb-6">
             <img src="/poljjak/img/icon.png" alt="" className="w-6 h-6 rounded-md" />← 폴짝
           </Link>
-          <h1 className="text-[28px] font-black leading-tight [text-shadow:0_2px_14px_rgba(170,60,30,0.35)]">폴짝 개인정보처리방침</h1>
-          <p className="text-white/85 text-sm mt-2">
+          <h1 className="text-[28px] font-black leading-tight">폴짝 개인정보처리방침</h1>
+          <p className="text-[#6B6450] text-sm mt-2">
             시행일자: {EFFECTIVE_DATE} · 운영자: {OPERATOR} (개인 개발자)
           </p>
         </div>
       </header>
 
       <main className="max-w-2xl mx-auto px-4 py-8">
-        <div className="bg-white/80 backdrop-blur-xl border border-white rounded-3xl p-6 sm:p-9 space-y-8 text-[15px] leading-relaxed text-[#4A3826] shadow-[0_10px_30px_rgba(170,60,30,0.08)]">
+        <div className="bg-white/80 backdrop-blur-xl border border-white rounded-3xl p-6 sm:p-9 space-y-8 text-[15px] leading-relaxed text-[#2A2410] shadow-[0_10px_30px_rgba(120,100,20,0.08)]">
           <p>
             폴짝은 아동 및 보호자의 개인정보와 위치정보를 외부 서버로 수집·전송하지 않습니다. 이 방침은
             '폴짝 - 우리 아이 나들이 일기'(이하 '앱')이 어떤 정보를 어떻게 다루는지 설명합니다.
@@ -97,14 +97,14 @@ export default function Privacy() {
 
           <Section title="9. 개인정보 보호책임자">
             개인정보 보호책임자: {OPERATOR} (개인 개발자) ·{" "}
-            <a href={`mailto:${CONTACT_EMAIL}`} className="text-[#D2552E] underline">
+            <a href={`mailto:${CONTACT_EMAIL}`} className="text-[#1F7A3A] underline">
               {CONTACT_EMAIL}
             </a>
           </Section>
 
           <Section title="10. 문의">
             이 방침에 대한 문의는{" "}
-            <a href={`mailto:${CONTACT_EMAIL}`} className="text-[#D2552E] underline">
+            <a href={`mailto:${CONTACT_EMAIL}`} className="text-[#1F7A3A] underline">
               {CONTACT_EMAIL}
             </a>
             으로 보내 주세요.
@@ -114,7 +114,7 @@ export default function Privacy() {
         </div>
       </main>
 
-      <Footer tone="dark" />
+      <Footer />
     </div>
   );
 }
@@ -122,7 +122,7 @@ export default function Privacy() {
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <section>
-      <h2 className="text-[#D2552E] text-lg font-extrabold mb-2">{title}</h2>
+      <h2 className="text-[#1F7A3A] text-lg font-extrabold mb-2">{title}</h2>
       <p>{children}</p>
     </section>
   );
