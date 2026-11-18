@@ -3,10 +3,9 @@ import { Link } from "react-router-dom";
 export const CONTACT_EMAIL = "poljjak@lunenlabs.com";
 export const OPERATOR = "류정현";
 
-export default function Footer({ tone = "light" }: { tone?: "light" | "dark" }) {
-  const text = tone === "light" ? "text-white/85" : "text-[#8A5A4A]";
+export default function Footer() {
   return (
-    <footer className={`px-6 pt-10 pb-12 text-center text-xs leading-6 ${text}`}>
+    <footer className="px-6 pt-10 pb-12 text-center text-xs leading-6 text-[#6B6450]">
       <div className="flex justify-center gap-4 mb-2 font-semibold">
         <Link to="/privacy" className="underline underline-offset-2">
           개인정보처리방침
