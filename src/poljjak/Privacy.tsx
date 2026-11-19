@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Footer, { CONTACT_EMAIL, OPERATOR } from "./Footer";
 
 // Update this when the policy text changes.
-const EFFECTIVE_DATE = "2026년 11월 17일";
+const EFFECTIVE_DATE = "2026년 11월 20일";
 
 export default function Privacy() {
   useEffect(() => {
@@ -75,12 +75,14 @@ export default function Privacy() {
             보이며, 위치에 따라 고르지 않습니다.
           </Section>
 
-          <Section title="6. 장소 사진">
+          <Section title="6. 장소 사진과 공연 포스터">
             장소 정보와 사진은 한국관광공사 자료입니다. 일부 사진(공공누리 제1유형)은 앱에 들어 있고,
             나머지는 장소를 볼 때 한국관광공사 이미지 서버(tong.visitkorea.or.kr)에서 내려받습니다. 이
             요청에는 위치 좌표나 아이 정보가 들어가지 않지만, 일반적인 웹 요청 정보(예: IP 주소)와 어떤
             사진을 요청했는지가 그 서버에 남을 수 있습니다. 목록이 가까운 순이라 이 정보로 대략적인 지역을
-            짐작할 수 있습니다. 그 서버의 정보 처리에는 한국관광공사의 정책이 적용됩니다.
+            짐작할 수 있습니다. 그 서버의 정보 처리에는 한국관광공사의 정책이 적용됩니다. '아이랑 볼 공연'의
+            포스터는 공연예술통합전산망(KOPIS, 예술경영지원센터) 이미지 서버(kopis.or.kr)에서 같은 방식으로
+            내려받으며, 그 서버의 정보 처리에는 예술경영지원센터의 정책이 적용됩니다.
           </Section>
 
           <Section title="7. 지도">
