@@ -33,6 +33,10 @@
   ],
   "rewrites": [
     {
+      "source": "/m/:c([0-9A-Za-z]{6})",
+      "destination": "/api/m?c=:c"
+    },
+    {
       "source": "/:path((?!api/|assets/|dangmasil/).*)",
       "has": [
         {
