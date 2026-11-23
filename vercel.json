@@ -6,6 +6,11 @@
   "outputDirectory": "dist",
   "redirects": [
     {
+      "source": "/m/:lat(-?[0-9]{1,2}[.][0-9]{1,7})/:lng(-?[0-9]{1,3}[.][0-9]{1,7})",
+      "destination": "https://map.kakao.com/link/map/%EC%95%BD%EC%86%8D%20%EC%9E%A5%EC%86%8C,:lat,:lng",
+      "permanent": false
+    },
+    {
       "source": "/dangmasil/privacy",
       "destination": "https://dangmasil.lunenlabs.com/privacy",
       "permanent": true
