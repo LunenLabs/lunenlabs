@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Footer, { CONTACT_EMAIL, OPERATOR } from "./Footer";
 
 // Update this when the policy text changes.
-const EFFECTIVE_DATE = "2026년 11월 20일";
+const EFFECTIVE_DATE = "2026년 11월 24일";
 
 export default function Privacy() {
   useEffect(() => {
@@ -70,7 +70,10 @@ export default function Privacy() {
             나들이 카드, 메달 카드, 연말 결산 카드에는 날짜, 나들이 시간, 거리, 아이 사진과 이름만 담기며
             지도, 경로, 위치 좌표, 동네 이름, 시각은 넣지 않습니다. 카드는 이용자가 공유 버튼을 눌러 직접
             보낼 때만 휴대폰 밖으로 나갑니다. '같이 놀자' 초대장에는 이용자가 직접 고른 공개 장소의 이름과
-            지도 링크, 약속 시각이 담깁니다.
+            지도 링크, 약속 시각이 담깁니다. 지도 링크(lunenlabs.com/m/…)는 장소의 좌표만 담은 짧은 주소로,
+            받은 사람이 누르면 lunenlabs.com을 거쳐 카카오맵이 열립니다. 이때 누른 사람의 일반적인 웹 요청
+            정보(예: IP 주소)와 링크 주소가 호스팅 서버의 로그에 남을 수 있습니다. 약속 시각, 아이 정보, 보낸
+            사람의 정보는 링크에 들어가지 않습니다.
           </Section>
 
           <Section title="5. 장소 목록, 놀이터 목록, 상품 목록 받기">
