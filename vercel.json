@@ -33,6 +33,16 @@
   ],
   "rewrites": [
     {
+      "source": "/app",
+      "has": [
+        {
+          "type": "host",
+          "value": "poljjak.lunenlabs.com"
+        }
+      ],
+      "destination": "/api/poljjak-app"
+    },
+    {
       "source": "/m/:c([0-9A-Za-z]{6})",
       "destination": "/api/m?c=:c"
     },

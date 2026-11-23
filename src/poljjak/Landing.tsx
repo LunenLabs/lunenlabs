@@ -49,12 +49,15 @@ export default function Landing() {
         </div>
 
         <div className="px-6 mt-8">
-          <div
-            aria-disabled="true"
-            className="w-full rounded-full bg-white/70 backdrop-blur-xl border border-white text-[#2A2410] font-bold text-[15px] py-4 text-center"
+          <a
+            href="https://apps.apple.com/kr/app/id6834524472"
+            className="block w-full rounded-full bg-[#2A2410] text-white font-bold text-[15px] py-4 text-center"
           >
-            App Store 출시 준비 중 · 곧 만나요
-          </div>
+            App Store에서 받기
+          </a>
+          <p className="mt-3 text-center text-[13px] font-semibold text-[#6B6450]">
+            지금은 아이폰에서 쓸 수 있어요 · 안드로이드는 준비 중이에요
+          </p>
         </div>
 
         <div className="mt-12 flex flex-col items-center px-6">
