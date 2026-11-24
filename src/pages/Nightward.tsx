@@ -4,6 +4,8 @@ import TwHero from "../components/tw/TwHero";
 import TwProblem from "../components/tw/TwProblem";
 import TwRealCase from "../components/tw/TwRealCase";
 import TwHowItWorks from "../components/tw/TwHowItWorks";
+import TwIntegrations from "../components/tw/TwIntegrations";
+import TwFeatures from "../components/tw/TwFeatures";
 import TwHonest from "../components/tw/TwHonest";
 import TwCta from "../components/tw/TwCta";
 import TwFooter from "../components/tw/TwFooter";
@@ -21,7 +23,7 @@ export default function Nightward() {
     if (meta) {
       meta.setAttribute(
         "content",
-        "nightward shows every behavior an AI code change quietly moved (the blast radius) and blocks anything a human hasn't approved, even when the tests stay green. Open source, MIT. By LunenLabs."
+        "nightward shows every behavior an AI code change quietly moved (the blast radius) and blocks anything a human hasn't approved, even when the tests stay green. A pytest plugin, Claude Code plugin, MCP server and GitHub Action. Open source, MIT. By LunenLabs."
       );
     }
 
@@ -40,6 +42,8 @@ export default function Nightward() {
         <TwProblem />
         <TwRealCase />
         <TwHowItWorks />
+        <TwIntegrations />
+        <TwFeatures />
         <TwHonest />
         <TwCta />
       </main>

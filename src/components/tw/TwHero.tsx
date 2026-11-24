@@ -1,3 +1,5 @@
+import { GLAMA, NW_VERSION } from "./meta";
+
 export default function TwHero() {
   const scrollTo = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -24,7 +26,7 @@ export default function TwHero() {
         <div className="max-w-3xl">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-md border border-aqua/30 bg-aqua/10 text-aqua text-xs font-semibold mb-7 font-mono tracking-wide">
             <span className="w-1.5 h-1.5 rounded-full bg-aqua animate-pulse" />
-            nightward · open source · MIT · on PyPI
+            nightward v{NW_VERSION} · open source · MIT · on PyPI
           </div>
 
           <h1 className="text-white text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.12] mb-6">
@@ -42,7 +44,8 @@ export default function TwHero() {
           <p className="text-white/55 text-base sm:text-lg leading-relaxed mb-10 max-w-2xl">
             A regression gate for AI-made changes. When Claude Code or Cursor edits your code,
             nightward catches the real blast radius of a one-line fix: every behavior that
-            moved, even when the tests stay green.
+            moved, even when the tests stay green. It runs as a pytest plugin, a Claude Code
+            plugin, an MCP server and a GitHub Action.
           </p>
 
           <div className="flex flex-wrap items-center gap-3 mb-14">
@@ -59,6 +62,25 @@ export default function TwHero() {
               Get started
             </button>
           </div>
+
+          <a
+            href={GLAMA}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 mb-12 pl-1.5 pr-4 py-1.5 rounded-xl border border-white/10 bg-white/[0.04] hover:border-aqua/40 hover:bg-white/[0.07] transition-colors"
+          >
+            <span className="w-9 h-9 rounded-lg bg-aqua text-navy-deep text-lg font-extrabold flex items-center justify-center">
+              A
+            </span>
+            <span className="text-sm leading-tight">
+              <span className="block text-white font-semibold">
+                Glama MCP directory · Official
+              </span>
+              <span className="block text-white/55 text-xs">
+                Tool Definition Quality Score 4.5 / 5 →
+              </span>
+            </span>
+          </a>
 
           <div className="grid grid-cols-3 gap-4 max-w-lg">
             {[

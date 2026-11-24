@@ -1,9 +1,7 @@
 /**
- * CTA 섹션 — 공개 레포 + PyPI 설치 안내.
+ * CTA 섹션 — 공개 레포 + PyPI 설치 안내 + Claude Code 플러그인.
  */
-const GITHUB = "https://github.com/LunenLabs/nightward";
-const PYPI = "https://pypi.org/project/nightward/";
-const QUICKSTART = `${GITHUB}#quickstart-5-minutes`;
+import { GITHUB, GLAMA, NW_VERSION, PYPI, QUICKSTART } from "./meta";
 
 export default function TwCta() {
   return (
@@ -20,7 +18,7 @@ export default function TwCta() {
         <div className="text-center mb-10">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-md border border-aqua/30 bg-aqua/10 text-aqua text-xs font-semibold mb-5 font-mono tracking-wide">
             <span className="w-1.5 h-1.5 rounded-full bg-aqua" />
-            OPEN SOURCE · MIT
+            OPEN SOURCE · MIT · v{NW_VERSION}
           </div>
           <h2 className="text-white text-4xl sm:text-5xl font-bold mb-5 leading-tight">
             Try it in five minutes.
@@ -34,12 +32,19 @@ export default function TwCta() {
           </p>
         </div>
 
-        <pre className="rounded-2xl border border-white/10 bg-black/40 px-5 py-4 mb-8 overflow-x-auto text-sm font-mono leading-relaxed">
+        <pre className="rounded-2xl border border-white/10 bg-black/40 px-5 py-4 mb-4 overflow-x-auto text-sm font-mono leading-relaxed">
           <code>
             <span className="text-white/90">pip install nightward</span>
             {"\n"}
             <span className="text-white/90">pip install "nightward[mcp]"</span>
             <span className="text-white/40">{"  # + MCP server for AI agents"}</span>
+          </code>
+        </pre>
+        <pre className="rounded-2xl border border-white/10 bg-black/40 px-5 py-4 mb-8 overflow-x-auto text-sm font-mono leading-relaxed">
+          <code>
+            <span className="text-white/40">{"# in Claude Code"}</span>
+            {"\n"}
+            <span className="text-white/90">/plugin install nightward --marketplace LunenLabs/nightward</span>
           </code>
         </pre>
 
@@ -72,6 +77,17 @@ export default function TwCta() {
 
         <p className="mt-8 text-center text-white/40 text-xs leading-relaxed">
           Free and MIT-licensed. Issues and feedback are welcome on GitHub.
+          <br />
+          Also listed on the{" "}
+          <a
+            href={GLAMA}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-aqua/80 underline underline-offset-2 hover:text-aqua"
+          >
+            Glama MCP directory
+          </a>{" "}
+          with an A Tool Definition Quality Score (4.5 / 5).
         </p>
       </div>
     </section>
