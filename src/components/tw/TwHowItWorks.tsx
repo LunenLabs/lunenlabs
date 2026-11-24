@@ -37,7 +37,7 @@ export default function TwHowItWorks() {
           <p className="text-white/65 text-lg leading-relaxed">
             Without writing a single new assertion, nightward takes today's behavior as the
             baseline and watches for anything that drifts from it. Your AI agent can run the
-            gate (CLI or MCP); only a human can open it.
+            gate (CLI, MCP or the Claude Code plugin); only a human can open it.
           </p>
         </div>
 

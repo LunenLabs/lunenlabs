@@ -2,6 +2,11 @@
  * nightward 페이지 전용 영어 footer (공용 Footer는 한국어).
  * 한국어 페이지 링크는 <a>로 전체 로드 — 한국어 <head>(lang/title)를 다시 받기 위해.
  */
+import { CHANGELOG, GITHUB, GLAMA, PYPI } from "./meta";
+
+const ext = { target: "_blank", rel: "noopener noreferrer" } as const;
+const linkCls = "hover:text-aqua transition-colors";
+
 export default function TwFooter() {
   return (
     <footer className="bg-navy-deep text-white/60">
@@ -12,29 +17,22 @@ export default function TwFooter() {
           <span className="text-white/40">· software studio, Seoul</span>
         </div>
         <nav className="flex flex-wrap items-center gap-x-6 gap-y-2">
-          <a
-            href="https://github.com/LunenLabs/nightward"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-aqua transition-colors"
-          >
+          <a href={GITHUB} {...ext} className={linkCls}>
             GitHub
           </a>
-          <a
-            href="https://pypi.org/project/nightward/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-aqua transition-colors"
-          >
+          <a href={PYPI} {...ext} className={linkCls}>
             PyPI
           </a>
-          <a href="mailto:jhryu115@gmail.com" className="hover:text-aqua transition-colors">
+          <a href={CHANGELOG} {...ext} className={linkCls}>
+            Changelog
+          </a>
+          <a href={GLAMA} {...ext} className={linkCls}>
+            Glama
+          </a>
+          <a href="mailto:jhryu115@gmail.com" className={linkCls}>
             Contact
           </a>
-          <a href="/privacy" className="hover:text-aqua transition-colors">
-            Privacy (Korean)
-          </a>
-          <a href="/" className="hover:text-aqua transition-colors">
+          <a href="/" className={linkCls}>
             LunenLabs home (Korean)
           </a>
         </nav>

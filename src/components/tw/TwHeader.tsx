@@ -49,11 +49,13 @@ export default function TwHeader() {
           </div>
         </div>
 
-        <nav className="hidden md:flex items-center gap-7 text-sm">
+        <nav className="hidden lg:flex items-center gap-7 text-sm">
           {[
             { id: "tw-problem", label: "Problem" },
             { id: "tw-case", label: "Real case" },
             { id: "tw-how", label: "How it works" },
+            { id: "tw-integrations", label: "Integrations" },
+            { id: "tw-features", label: "What's new" },
             { id: "tw-honest", label: "Scope" },
           ].map((it) => (
             <button
@@ -73,7 +75,7 @@ export default function TwHeader() {
         </nav>
         <button
           onClick={() => scrollTo("tw-cta")}
-          className="md:hidden px-3.5 py-1.5 rounded-full bg-aqua text-navy-deep font-semibold text-xs"
+          className="lg:hidden px-3.5 py-1.5 rounded-full bg-aqua text-navy-deep font-semibold text-xs"
         >
           Get started
         </button>
