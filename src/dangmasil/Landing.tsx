@@ -3,6 +3,8 @@ import Footer from "./Footer";
 
 const GRADIENT = "radial-gradient(120% 70% at 20% 0%, #FFC27A 0%, #FF9A3D 38%, #F07A1A 70%, #E8650F 100%)";
 const GLASS = "bg-white/65 backdrop-blur-xl border border-white/70";
+// App Store campaign link (ct=landing) — counted by source in App Store Connect.
+const APP_STORE_URL = "https://apps.apple.com/app/apple-store/id6828776578?pt=129701862&ct=landing&mt=8";
 
 const FEATURES = [
   { icon: "🐶", title: "여러 아이 함께", body: "아이마다 사진과 주간 목표를 따로. 함께 나간 아이들 모두에게 기록돼요." },
@@ -46,12 +48,13 @@ export default function Landing() {
         </div>
 
         <div className="px-6 mt-8">
-          <div
-            aria-disabled="true"
-            className="w-full rounded-full bg-white/30 backdrop-blur-xl border border-white/60 text-white font-bold text-[15px] py-4 text-center"
+          <a
+            href={APP_STORE_URL}
+            className="block w-full rounded-full bg-white text-[#C2540A] font-bold text-[15px] py-4 text-center shadow-[0_10px_28px_rgba(150,60,0,0.3)] hover:bg-[#FFF1E2] transition-colors"
           >
-            App Store 출시 준비 중 · 곧 만나요
-          </div>
+            App Store에서 무료로 받기
+          </a>
+          <p className="mt-2.5 text-center text-xs text-white/85">iPhone 전용</p>
         </div>
 
         <section className="px-4 mt-12 space-y-3">

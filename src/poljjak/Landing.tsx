@@ -53,7 +53,7 @@ export default function Landing() {
             aria-disabled="true"
             className="w-full rounded-full bg-white/70 backdrop-blur-xl border border-white text-[#2A2410] font-bold text-[15px] py-4 text-center"
           >
-            App Store 출시 준비 중 · 곧 만나요
+            App Store 심사 중 · 곧 만나요
           </div>
         </div>
 
