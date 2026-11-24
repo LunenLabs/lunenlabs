@@ -1,7 +1,7 @@
 /**
  * CTA 섹션 — 공개 레포 + PyPI 설치 안내 + Claude Code 플러그인.
  */
-import { GITHUB, GLAMA, NW_VERSION, PYPI, QUICKSTART } from "./meta";
+import { GITHUB, GLAMA, NW_VERSION, PYPI, QUICKSTART, TDQS } from "./meta";
 
 export default function TwCta() {
   return (
@@ -87,7 +87,7 @@ export default function TwCta() {
           >
             Glama MCP directory
           </a>{" "}
-          with an A Tool Definition Quality Score (4.5 / 5).
+          with an {TDQS.grade} Tool Definition Quality Score ({TDQS.score} / 5).
         </p>
       </div>
     </section>

@@ -5,6 +5,7 @@ import {
   NIGHTWARD_GITHUB,
   NIGHTWARD_GLAMA,
   NIGHTWARD_PAGE,
+  NIGHTWARD_TDQS,
   POLJJAK_SITE,
   SDETCODE_SITE,
 } from "../data/links";
@@ -86,9 +87,9 @@ const quality: Product[] = [
       { label: "GitHub", href: NIGHTWARD_GITHUB },
     ],
     proof: {
-      source: "Glama MCP 디렉터리",
-      grade: "A",
-      detail: "도구 정의 품질 점수 4.5/5 · Official",
+      source: "AI 에이전트가 바로 이해하는 도구",
+      grade: NIGHTWARD_TDQS.grade,
+      detail: `Glama 도구 정의 품질 점수(TDQS) ${NIGHTWARD_TDQS.score} / 5 · ${NIGHTWARD_TDQS.scoredOn.slice(0, 7).replace("-", ".")} 채점`,
       href: NIGHTWARD_GLAMA,
     },
   },

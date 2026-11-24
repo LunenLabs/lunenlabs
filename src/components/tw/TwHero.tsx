@@ -1,4 +1,4 @@
-import { GLAMA, NW_VERSION } from "./meta";
+import { NW_VERSION, TDQS } from "./meta";
 
 export default function TwHero() {
   const scrollTo = (id: string) => {
@@ -63,24 +63,22 @@ export default function TwHero() {
             </button>
           </div>
 
-          <a
-            href={GLAMA}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 mb-12 pl-1.5 pr-4 py-1.5 rounded-xl border border-white/10 bg-white/[0.04] hover:border-aqua/40 hover:bg-white/[0.07] transition-colors"
+          <button
+            onClick={() => scrollTo("tw-rating")}
+            className="inline-flex items-center gap-3 mb-12 pl-1.5 pr-4 py-1.5 rounded-xl border border-white/10 bg-white/[0.04] hover:border-aqua/40 hover:bg-white/[0.07] transition-colors text-left"
           >
             <span className="w-9 h-9 rounded-lg bg-aqua text-navy-deep text-lg font-extrabold flex items-center justify-center">
-              A
+              {TDQS.grade}
             </span>
             <span className="text-sm leading-tight">
               <span className="block text-white font-semibold">
-                Glama MCP directory · Official
+                Agents understand it on first read
               </span>
               <span className="block text-white/55 text-xs">
-                Tool Definition Quality Score 4.5 / 5 →
+                Glama Tool Definition Quality Score: {TDQS.grade}, {TDQS.score} / 5 ↓
               </span>
             </span>
-          </a>
+          </button>
 
           <div className="grid grid-cols-3 gap-4 max-w-lg">
             {[

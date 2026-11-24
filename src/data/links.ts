@@ -12,9 +12,8 @@ export const POLJJAK_EMAIL = "poljjak@lunenlabs.com";
 
 export const NIGHTWARD_PAGE = "/nightward";
 export const NIGHTWARD_GITHUB = "https://github.com/LunenLabs/nightward";
-// Glama MCP directory listing. Its Tool Definition Quality Score (TDQS) was A, 4.5/5
-// (scored 2026-11-02). Re-check the page before changing the wording that quotes it.
-export const NIGHTWARD_GLAMA = "https://glama.ai/mcp/servers/LunenLabs/nightward";
+// Glama listing and its score: one source, shared with the nightward page.
+export { GLAMA as NIGHTWARD_GLAMA, TDQS as NIGHTWARD_TDQS } from "../components/tw/meta";
 
 export const SDETCODE_SITE = "https://sdetcode.com";
 

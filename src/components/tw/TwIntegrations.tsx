@@ -2,7 +2,7 @@
  * Where nightward runs: the Claude Code plugin, any MCP host, and CI.
  * The point to keep: the agent can run the gate and read the verdict, never approve.
  */
-import { DOCS, GITHUB, NW_VERSION } from "./meta";
+import { DOCS, GITHUB, GLAMA, NW_VERSION, TDQS, TDQS_SITE } from "./meta";
 
 const surfaces = [
   {
@@ -94,6 +94,94 @@ export default function TwIntegrations() {
                 <div className="text-white/50 text-xs leading-snug">{v.m}</div>
               </div>
             ))}
+          </div>
+        </div>
+
+        {/* Glama TDQS — 무엇을 재는 점수인지까지 함께 밝힌다 (코드 품질·보안 인증이 아님) */}
+        <div
+          id="tw-rating"
+          className="scroll-mt-24 mt-12 rounded-3xl border border-aqua/30 bg-gradient-to-br from-aqua/[0.08] to-transparent p-7 sm:p-10"
+        >
+          <div className="grid lg:grid-cols-[0.9fr_1.1fr] gap-10 items-start">
+            <div>
+              <div className="text-aqua/80 text-xs font-mono font-semibold tracking-wide uppercase mb-4">
+                Rated by Glama
+              </div>
+              <div className="flex items-end gap-4 mb-5">
+                <span className="w-20 h-20 rounded-2xl bg-aqua text-navy-deep text-5xl font-extrabold flex items-center justify-center">
+                  {TDQS.grade}
+                </span>
+                <span className="pb-1">
+                  <span className="block text-white text-4xl font-bold leading-none">
+                    {TDQS.score}
+                    <span className="text-white/40 text-xl font-semibold"> / 5</span>
+                  </span>
+                  <span className="block text-white/50 text-xs mt-2">
+                    Tool Definition Quality Score · scored {TDQS.scoredOn}
+                  </span>
+                </span>
+              </div>
+              <h3 className="text-white text-2xl font-bold mb-3 leading-snug">
+                Agents understand it on first read.
+              </h3>
+              <p className="text-white/65 text-sm leading-relaxed mb-5">
+                Glama, an MCP directory of more than 120,000 servers, grades how well each tool's definition
+                tells an AI agent what it does, when to call it, what its parameters mean and
+                what it will never do. Both nightward tools are graded{" "}
+                {TDQS.tools.map((t, i) => (
+                  <span key={t.name}>
+                    <code className="text-aqua font-mono text-[13px]">{t.name}</code> {t.grade}
+                    {i < TDQS.tools.length - 1 ? " and " : "."}
+                  </span>
+                ))}
+              </p>
+              <div className="flex flex-wrap gap-x-5 gap-y-2 text-sm">
+                <a
+                  href={GLAMA}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-aqua font-semibold hover:text-aqua-light"
+                >
+                  See the listing on Glama →
+                </a>
+                <a
+                  href={TDQS_SITE}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white/60 hover:text-white"
+                >
+                  How TDQS is scored
+                </a>
+              </div>
+            </div>
+
+            <div>
+              <div className="text-white/45 text-xs font-mono uppercase tracking-wider mb-4">
+                The tool set as a whole
+              </div>
+              <ul className="space-y-5">
+                {TDQS.dimensions.map((d) => (
+                  <li key={d.name}>
+                    <div className="flex items-baseline justify-between gap-3 mb-1.5">
+                      <span className="text-white font-semibold text-sm">{d.name}</span>
+                      <span className="font-mono text-sm text-aqua">{d.score}/5</span>
+                    </div>
+                    <div className="h-1.5 rounded-full bg-white/10 overflow-hidden mb-1.5">
+                      <div
+                        className="h-full rounded-full bg-aqua"
+                        style={{ width: `${(d.score / 5) * 100}%` }}
+                      />
+                    </div>
+                    <div className="text-white/50 text-xs">{d.note}</div>
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-6 text-white/40 text-xs leading-relaxed">
+                TDQS is an LLM-graded score with an open methodology. It measures how clearly the
+                tools are defined for an agent, not code quality, security, or how many
+                regressions nightward catches.
+              </p>
+            </div>
           </div>
         </div>
       </div>
