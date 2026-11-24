@@ -1,4 +1,14 @@
 import { Link } from "react-router-dom";
+import {
+  CONTACT_EMAIL,
+  DANGMASIL_SITE,
+  NIGHTWARD_PAGE,
+  POLJJAK_SITE,
+  SDETCODE_SITE,
+} from "../data/links";
+
+const ext = { target: "_blank", rel: "noopener noreferrer" } as const;
+const linkCls = "hover:text-aqua transition-colors";
 
 export default function Footer() {
   return (
@@ -13,29 +23,40 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-sm leading-relaxed text-white/55">
-              더 안전한 일상을 위한 소프트웨어 스튜디오
+              작은 일상과 단단한 코드를 만드는 스튜디오
             </p>
           </div>
 
           <div>
             <h4 className="text-white font-semibold mb-4 text-sm">제품</h4>
             <div className="text-white/40 text-[11px] uppercase tracking-wider mb-2">
-              안심 앱
+              일상 기록 앱
             </div>
             <ul className="space-y-2 text-sm mb-4">
-              <li>PetTracker (출시 예정)</li>
-              <li>SafeWay Kids (샌드박스)</li>
-              <li>CareConnect (개발 중)</li>
+              <li>
+                <a href={DANGMASIL_SITE} {...ext} className={linkCls}>
+                  댕마실 (운영 중)
+                </a>
+              </li>
+              <li>
+                <a href={POLJJAK_SITE} {...ext} className={linkCls}>
+                  폴짝 (App Store 심사 중)
+                </a>
+              </li>
             </ul>
             <div className="text-white/40 text-[11px] uppercase tracking-wider mb-2">
               품질 엔지니어링
             </div>
             <ul className="space-y-2 text-sm">
-              <li>SDET Code (점진 축소)</li>
               <li>
-                <Link to="/nightward" className="hover:text-aqua transition-colors">
+                <Link to={NIGHTWARD_PAGE} className={linkCls}>
                   nightward (오픈소스)
                 </Link>
+              </li>
+              <li>
+                <a href={SDETCODE_SITE} {...ext} className={linkCls}>
+                  SDET Code (운영 중)
+                </a>
               </li>
             </ul>
           </div>
@@ -44,16 +65,13 @@ export default function Footer() {
             <h4 className="text-white font-semibold mb-4 text-sm">회사</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#about" className="hover:text-aqua transition-colors">
+                <a href="/#about" className={linkCls}>
                   회사 소개
                 </a>
               </li>
               <li>
-                <a
-                  href="mailto:jhryu115@gmail.com"
-                  className="hover:text-aqua transition-colors"
-                >
-                  연락처: jhryu115@gmail.com
+                <a href={`mailto:${CONTACT_EMAIL}`} className={linkCls}>
+                  연락처: {CONTACT_EMAIL}
                 </a>
               </li>
               <li className="text-white/45 text-xs">
@@ -66,12 +84,22 @@ export default function Footer() {
             <h4 className="text-white font-semibold mb-4 text-sm">정책</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link to="/privacy" className="hover:text-aqua transition-colors">
-                  개인정보처리방침
+                <a href={`${DANGMASIL_SITE}privacy`} {...ext} className={linkCls}>
+                  댕마실 개인정보처리방침
+                </a>
+              </li>
+              <li>
+                <a href={`${POLJJAK_SITE}privacy`} {...ext} className={linkCls}>
+                  폴짝 개인정보처리방침
+                </a>
+              </li>
+              <li>
+                <Link to="/privacy" className={linkCls}>
+                  사전가입 개인정보처리방침
                 </Link>
               </li>
               <li>
-                <Link to="/terms" className="hover:text-aqua transition-colors">
+                <Link to="/terms" className={linkCls}>
                   이용약관
                 </Link>
               </li>
