@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { DANGMASIL_APP_STORE } from "../data/links";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -39,9 +40,9 @@ export default function Header() {
         <nav className="hidden md:flex items-center gap-7 text-sm">
           {[
             { id: "about", label: "회사 소개" },
-            { id: "products", label: "제품" },
-            { id: "pt", label: "PetTracker" },
-            { id: "signup", label: "사전가입" },
+            { id: "track-apps", label: "앱" },
+            { id: "track-quality", label: "개발 도구" },
+            { id: "faq", label: "FAQ" },
           ].map((it) => (
             <button
               key={it.id}
@@ -53,18 +54,20 @@ export default function Header() {
               {it.label}
             </button>
           ))}
-          <button
-            onClick={() => scrollTo("signup")}
+          <a
+            href={DANGMASIL_APP_STORE}
+            target="_blank"
+            rel="noopener noreferrer"
             className="px-4 py-2 rounded-full bg-aqua text-navy-deep font-semibold text-sm hover:bg-aqua-dark hover:text-white transition-all"
           >
-            베타 신청
-          </button>
+            댕마실 받기
+          </a>
         </nav>
         <button
-          onClick={() => scrollTo("signup")}
+          onClick={() => scrollTo("products")}
           className="md:hidden px-3.5 py-1.5 rounded-full bg-aqua text-navy-deep font-semibold text-xs"
         >
-          베타 신청
+          제품 보기
         </button>
       </div>
     </header>
