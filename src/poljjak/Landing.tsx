@@ -51,7 +51,7 @@ export default function Landing() {
 
         <div className="px-6 mt-8">
           <a
-            href="https://apps.apple.com/kr/app/id6834524472"
+            href="https://apps.apple.com/app/apple-store/id6834524472?pt=129701862&ct=landing&mt=8"
             className="block w-full rounded-full bg-[#2A2410] text-white font-bold text-[15px] py-4 text-center"
           >
             App Store에서 받기
