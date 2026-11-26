@@ -10,7 +10,7 @@ const FEATURES = [
   { img: "/poljjak/img/feature-map.jpg", title: "놀이터·키즈카페 지도", body: "우리 동네 놀이터, 키즈카페, 놀이방 식당, 공원을 지도로 한눈에. 위치는 휴대폰 안에서만 계산해요." },
   { img: "/poljjak/img/feature-shows.jpg", title: "어린이 공연·축제", body: "가까운 어린이 뮤지컬, 인형극, 마술 공연과 가족 축제를 모아 보여 줘요." },
   { img: "/poljjak/img/feature-playdate.jpg", title: "같이 놀자", body: "날짜와 친구 가족을 고르면 그날 갈 만한 곳을 세 군데 골라 드려요. 초대장은 카카오톡으로 보내요." },
-  { img: "/poljjak/img/feature-record.jpg", title: "나들이 기록", body: "나들이 시간과 거리를 기록하고, 아이 사진으로 스토리 카드를 만들어요. 다둥이도 함께요." },
+  { img: "/poljjak/img/feature-record.jpg", square: true, title: "나들이 기록", body: "나들이 시간과 거리를 기록하고, 아이 사진으로 스토리 카드를 만들어요. 다둥이도 함께요." },
 ];
 
 export default function Landing() {
@@ -80,9 +80,9 @@ export default function Landing() {
                 src={f.img}
                 alt=""
                 width={800}
-                height={600}
+                height={f.square ? 800 : 600}
                 loading="lazy"
-                className="w-full aspect-[4/3] object-cover rounded-[20px] bg-[#FFF0A0]"
+                className={`w-full ${f.square ? "aspect-square" : "aspect-[4/3]"} object-cover rounded-[20px] bg-[#FFF0A0]`}
               />
               <div className="px-2 pt-4 pb-2">
                 <h2 className="font-bold text-[17px]">{f.title}</h2>
