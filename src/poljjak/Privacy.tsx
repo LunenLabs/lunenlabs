@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Footer, { CONTACT_EMAIL, OPERATOR } from "./Footer";
 
 // Update this when the policy text changes.
-const EFFECTIVE_DATE = "2026년 11월 24일";
+const EFFECTIVE_DATE = "2026년 11월 27일";
 
 export default function Privacy() {
   useEffect(() => {
@@ -117,14 +117,22 @@ export default function Privacy() {
             앱은 이때 이용자의 위치를 함께 보내지 않으며, 열린 곳의 정보 처리에는 그곳의 정책이 적용됩니다.
           </Section>
 
-          <Section title="10. 개인정보 보호책임자">
+          <Section title="10. 이 웹사이트의 방문 통계">
+            이 소개 페이지(poljjak.lunenlabs.com)는 몇 명이 어디서 들어왔는지 알기 위해 Vercel Web Analytics로
+            방문 수를 셉니다. 쿠키를 쓰지 않고, 이름·연락처·정확한 위치처럼 사람을 알아볼 수 있는 정보는 받지
+            않으며, 본 페이지, 들어온 경로(링크를 누른 사이트), 국가, 기기 종류와 운영체제만 모아서 셉니다. 이
+            통계는 앱과 연결되지 않으며, 앱은 지금처럼 아무 정보도 수집하지 않습니다. 앱 설치 링크(…/app)는
+            홍보 글을 구분하는 이름을 App Store 링크에 붙여 넘길 뿐 아무것도 저장하지 않습니다.
+          </Section>
+
+          <Section title="11. 개인정보 보호책임자">
             개인정보 보호책임자: {OPERATOR} (개인 개발자) ·{" "}
             <a href={`mailto:${CONTACT_EMAIL}`} className="text-[#1F7A3A] underline">
               {CONTACT_EMAIL}
             </a>
           </Section>
 
-          <Section title="11. 문의">
+          <Section title="12. 문의">
             이 방침에 대한 문의는{" "}
             <a href={`mailto:${CONTACT_EMAIL}`} className="text-[#1F7A3A] underline">
               {CONTACT_EMAIL}
@@ -132,7 +140,7 @@ export default function Privacy() {
             으로 보내 주세요.
           </Section>
 
-          <Section title="12. 방침의 변경">이 방침이 바뀌면 이 페이지에 새 시행일자와 함께 게시합니다.</Section>
+          <Section title="13. 방침의 변경">이 방침이 바뀌면 이 페이지에 새 시행일자와 함께 게시합니다.</Section>
         </div>
       </main>
 
