@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Footer, { CONTACT_EMAIL, OPERATOR } from "./Footer";
 
 // Update this when the policy text changes.
-const EFFECTIVE_DATE = "2026년 11월 27일";
+const EFFECTIVE_DATE = "2026년 11월 28일";
 
 export default function Privacy() {
   useEffect(() => {
@@ -74,6 +74,13 @@ export default function Privacy() {
             받은 사람이 누르면 lunenlabs.com을 거쳐 카카오맵이 열립니다. 이때 누른 사람의 일반적인 웹 요청
             정보(예: IP 주소)와 링크 주소가 호스팅 서버의 로그에 남을 수 있습니다. 약속 시각, 아이 정보, 보낸
             사람의 정보는 링크에 들어가지 않습니다.
+            <br />
+            <br />
+            '카톡으로 보내기'를 누르면 카드 그림이 카카오의 이미지 서버에 올라간 뒤 카카오톡 공유 메시지로
+            보내집니다. 메시지에는 카드 그림, 아이 이름, 날짜, 나들이 시간, 거리, 폴짝 설치 페이지 링크가
+            담깁니다. 올라간 그림은 카카오 서버에 최대 100일 동안 보관된 뒤 자동으로 지워지며, 그동안 그림의
+            주소를 아는 사람은 볼 수 있습니다. 이 처리에는 카카오의 정책이 적용되며, 폴짝 운영자는 그림을
+            따로 받거나 보관하지 않습니다.
           </Section>
 
           <Section title="5. 장소 목록, 놀이터 목록, 상품 목록 받기">
